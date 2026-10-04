@@ -1,0 +1,2226 @@
+{
+  "Phase": 7,
+  "Status": "PHASE 7 COMPLETE",
+  "CompletedUtc": "2026-10-03T17:29:53.1919354Z",
+  "SolidWorksRevision": "32.0.1",
+  "BatchExecutionVerified": true,
+  "ExactSettingRestorationVerified": true,
+  "RollbackAndAtomicCommitVerified": true,
+  "ProtectedModelsUnchanged": true,
+  "ScopeUnitTests": {
+    "success": true,
+    "total": 17,
+    "failed": 0,
+    "results": [
+      {
+        "name": "normal restoration and one final refresh",
+        "success": true
+      },
+      {
+        "name": "exception body restores all settings",
+        "success": true
+      },
+      {
+        "name": "nested scopes preserve outer batch",
+        "success": true
+      },
+      {
+        "name": "already-disabled settings remain disabled",
+        "success": true
+      },
+      {
+        "name": "partial initialization read failure CommandInProgress",
+        "success": true
+      },
+      {
+        "name": "setter mutates then throws CommandInProgress",
+        "success": true
+      },
+      {
+        "name": "restore failure is visible and remaining restores run CommandInProgress",
+        "success": true
+      },
+      {
+        "name": "partial initialization read failure EnableFeatureTree",
+        "success": true
+      },
+      {
+        "name": "setter mutates then throws EnableFeatureTree",
+        "success": true
+      },
+      {
+        "name": "restore failure is visible and remaining restores run EnableFeatureTree",
+        "success": true
+      },
+      {
+        "name": "partial initialization read failure EnableFeatureTreeWindow",
+        "success": true
+      },
+      {
+        "name": "setter mutates then throws EnableFeatureTreeWindow",
+        "success": true
+      },
+      {
+        "name": "restore failure is visible and remaining restores run EnableFeatureTreeWindow",
+        "success": true
+      },
+      {
+        "name": "partial initialization read failure EnableGraphicsUpdate",
+        "success": true
+      },
+      {
+        "name": "setter mutates then throws EnableGraphicsUpdate",
+        "success": true
+      },
+      {
+        "name": "restore failure is visible and remaining restores run EnableGraphicsUpdate",
+        "success": true
+      },
+      {
+        "name": "final tree failure still attempts redraw",
+        "success": true
+      }
+    ]
+  },
+  "ValidationRegression": {
+    "passed": 34,
+    "failed": 0,
+    "total": 34,
+    "source": "data-only mutation tests over previously recorded real native measurements; no live COM or LLM",
+    "results": [
+      {
+        "name": "valid previously measured canonical model",
+        "success": true
+      },
+      {
+        "name": "wrong feature type",
+        "success": true
+      },
+      {
+        "name": "changed feature identity",
+        "success": true
+      },
+      {
+        "name": "missing feature",
+        "success": true
+      },
+      {
+        "name": "sketch type mismatch",
+        "success": true
+      },
+      {
+        "name": "unbuilt document",
+        "success": true
+      },
+      {
+        "name": "feature rebuild error",
+        "success": true
+      },
+      {
+        "name": "extra solid body",
+        "success": true
+      },
+      {
+        "name": "extra surface body",
+        "success": true
+      },
+      {
+        "name": "missing box with no body",
+        "success": true
+      },
+      {
+        "name": "bounding box drift",
+        "success": true
+      },
+      {
+        "name": "requested dimension not applied",
+        "success": true
+      },
+      {
+        "name": "hole diameter differs despite dimension",
+        "success": true
+      },
+      {
+        "name": "hole count drift",
+        "success": true
+      },
+      {
+        "name": "asymmetric hole centers",
+        "success": true
+      },
+      {
+        "name": "blind hole geometry",
+        "success": true
+      },
+      {
+        "name": "blind end condition",
+        "success": true
+      },
+      {
+        "name": "pattern count drift",
+        "success": true
+      },
+      {
+        "name": "pattern spacing drift",
+        "success": true
+      },
+      {
+        "name": "fillet parameter differs",
+        "success": true
+      },
+      {
+        "name": "missing fillet geometry",
+        "success": true
+      },
+      {
+        "name": "stale reference",
+        "success": true
+      },
+      {
+        "name": "incomplete reference manifest",
+        "success": true
+      },
+      {
+        "name": "broken dependency graph",
+        "success": true
+      },
+      {
+        "name": "wrong dependency kind",
+        "success": true
+      },
+      {
+        "name": "binding ownership tampering",
+        "success": true
+      },
+      {
+        "name": "binding value drift",
+        "success": true
+      },
+      {
+        "name": "R2 succeeds with one set/rebuild/validation",
+        "success": true
+      },
+      {
+        "name": "R2 failure never loops",
+        "success": true
+      },
+      {
+        "name": "R2 rebuild failure stops before validation",
+        "success": true
+      },
+      {
+        "name": "R1 never guesses feature/sketchpoint identity",
+        "success": true
+      },
+      {
+        "name": "R1 unsupported reference remains stale class",
+        "success": true
+      },
+      {
+        "name": "R3 and R4 distinct failure classes",
+        "success": true
+      },
+      {
+        "name": "R5 unsupported/ambiguous classification",
+        "success": true
+      }
+    ]
+  },
+  "PlannerRegression": {
+    "testKind": "Deterministic rules, synthetic HTTP protocol fixtures, and actual loopback HTTP; no real model inference",
+    "executed": 76,
+    "failures": 0,
+    "results": [
+      {
+        "name": "rule edit mounting_holes.spacing",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 8.859,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_holes.spacing",
+            "valueMm": 50
+          }
+        }
+      },
+      {
+        "name": "rule edit base_plate.thickness",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.2066,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "cef661fa62b09787cf9d56f563146291792174effa79f667abbf495c3971c0e5"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "base_plate.thickness",
+            "valueMm": 12
+          }
+        }
+      },
+      {
+        "name": "rule edit mounting_hole_seed.diameter",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.1814,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "53ab3d9b042ef7943499ce964a1da437d3847d5afdc4d4b8565ef5435d0f1346"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_hole_seed.diameter",
+            "valueMm": 10
+          }
+        }
+      },
+      {
+        "name": "rule edit outer_edge_fillet.radius",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0949,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "990b46d98fe11bc51ff57f927d23b014790447f49c7540ad0573715924f8d4c4"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "outer_edge_fillet.radius",
+            "valueMm": 4
+          }
+        }
+      },
+      {
+        "name": "rule canonical create canonical part",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0796,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "6259343890644cd07df3a0d1c83518fd5285c1e25e312313465907779678b219"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "create",
+            "units": "mm",
+            "createPreset": "canonical",
+            "parameter": null,
+            "valueMm": null
+          }
+        }
+      },
+      {
+        "name": "rule canonical 创建标准板件",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.045200000000000004,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "6259343890644cd07df3a0d1c83518fd5285c1e25e312313465907779678b219"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "create",
+            "units": "mm",
+            "createPreset": "canonical",
+            "parameter": null,
+            "valueMm": null
+          }
+        }
+      },
+      {
+        "name": "rule canonical 创建80×50×10 mm板，两个Ø8通孔，孔距40 mm，四条外侧竖直边R3圆角",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.025,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "6259343890644cd07df3a0d1c83518fd5285c1e25e312313465907779678b219"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "create",
+            "units": "mm",
+            "createPreset": "canonical",
+            "parameter": null,
+            "valueMm": null
+          }
+        }
+      },
+      {
+        "name": "rule Chinese edit 0",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0945,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_holes.spacing",
+            "valueMm": 50
+          }
+        }
+      },
+      {
+        "name": "rule Chinese edit 1",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0322,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "cef661fa62b09787cf9d56f563146291792174effa79f667abbf495c3971c0e5"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "base_plate.thickness",
+            "valueMm": 12
+          }
+        }
+      },
+      {
+        "name": "rule Chinese edit 2",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0263,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "53ab3d9b042ef7943499ce964a1da437d3847d5afdc4d4b8565ef5435d0f1346"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_hole_seed.diameter",
+            "valueMm": 10
+          }
+        }
+      },
+      {
+        "name": "rule Chinese edit 3",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.029300000000000003,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "990b46d98fe11bc51ff57f927d23b014790447f49c7540ad0573715924f8d4c4"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "outer_edge_fillet.radius",
+            "valueMm": 4
+          }
+        }
+      },
+      {
+        "name": "rule reject create a turbine blade",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.19590000000000002,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule reject create canonical part then add a pocket",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0402,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule reject spacing 50 mm and thickness 12 mm",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0417,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule reject set thickness to 0.5 inch",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0193,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule reject increase thickness by 2 mm",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0181,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule reject run FeatureCut4()",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0142,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule reject thickness R12",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0178,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule numeric reject thickness 0",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.182,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "df300d4ff1412a4c2d05becb66b8a3db7aeeb92d22c4225f571be2952d7ac376"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule numeric reject hole diameter -2",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.057600000000000005,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "bc7a8681cb73f59abd962a8d79155159ddee438d8541d01be8b5591efd42dfa9"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule numeric reject spacing 1001",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.030600000000000002,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "06a01177aa54e6db68b31aec891bfc88c9b187147779e933a2b9ebb1d4da84e1"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule numeric reject fillet 1e309",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.024800000000000003,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "empty command",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_INPUT_INVALID",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0229,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "oversized input",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_INPUT_INVALID",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.022000000000000002,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm accepts {\"intentVersion\":\"0.1\",\"mode\":\"create\",\"units\":\"mm\",\"createPreset\":\"canonical\",\"parameter\":null,\"valueMm\":null}",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 19.633000000000003,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "6259343890644cd07df3a0d1c83518fd5285c1e25e312313465907779678b219"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "create",
+            "units": "mm",
+            "createPreset": "canonical",
+            "parameter": null,
+            "valueMm": null
+          }
+        }
+      },
+      {
+        "name": "llm accepts {\"intentVersion\":\"0.1\",\"mode\":\"edit\",\"units\":\"mm\",\"createPreset\":null,\"parameter\":\"mounting_holes.spacing\",\"valueMm\":50}",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.4031,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_holes.spacing",
+            "valueMm": 50
+          }
+        }
+      },
+      {
+        "name": "llm accepts {\"intentVersion\":\"0.1\",\"mode\":\"edit\",\"units\":\"mm\",\"createPreset\":null,\"parameter\":\"base_plate.thickness\",\"valueMm\":12}",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2655,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "cef661fa62b09787cf9d56f563146291792174effa79f667abbf495c3971c0e5"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "base_plate.thickness",
+            "valueMm": 12
+          }
+        }
+      },
+      {
+        "name": "llm accepts {\"intentVersion\":\"0.1\",\"mode\":\"edit\",\"units\":\"mm\",\"createPreset\":null,\"parameter\":\"mounting_hole_seed.diameter\",\"valueMm\":10}",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.1816,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "53ab3d9b042ef7943499ce964a1da437d3847d5afdc4d4b8565ef5435d0f1346"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_hole_seed.diameter",
+            "valueMm": 10
+          }
+        }
+      },
+      {
+        "name": "llm accepts {\"intentVersion\":\"0.1\",\"mode\":\"edit\",\"units\":\"mm\",\"createPreset\":null,\"parameter\":\"outer_edge_fillet.radius\",\"valueMm\":4}",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.1835,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "990b46d98fe11bc51ff57f927d23b014790447f49c7540ad0573715924f8d4c4"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "outer_edge_fillet.radius",
+            "valueMm": 4
+          }
+        }
+      },
+      {
+        "name": "llm rejects C# text",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.38980000000000004,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "86ce766cb14b2a2b8765706a761dca412d8c09cfe18eb2c8b08954d1ef58694e"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects Markdown fence",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2204,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "5c58595541f6ad63565bfc7f6323196f87a920d310e332b80c601df4c66b9c28"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects trailing text",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.1829,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "dd88fc91b9f4af267959e73eecbfc786227222c6fc8d10bc2f9b584413f0df92"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects duplicate key",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.17800000000000002,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "dbb0624bdb30cd33efd0b707207bcf456a6097bcd783c8d46b2671714bdd284e"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects trailing comma",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.16690000000000002,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "a7cdb471280308edddc690bd2ed4f1867982bff2b43fefa1889d0ca054fbc070"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects comment",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.1661,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "25ad142eddbebf47621b7deb78a8053a775f330758011dad1ff7579b56fdcf6a"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects unknown field",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.16640000000000002,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "48b55174f312c4e03aed79b276a6e966dbf24a1dc6060e53814571398b7dd1ac"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects tool sequence",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2494,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "356cb1741d1cff5b38bbd86254afd4a7988f4dcdbb37ec17021a7c32328643a6"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects array of intents",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.5691,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "7361822617d57323becf2abdb7da96ad77f2381ab531fec759aa8cbfe02926d5"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects missing field",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.4128,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "350fa0d185e514edf9f67219a01c1a6fbbe6cc0998757685c4f7a57d75c62eb9"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects version",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.3009,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "72a1d5f7a032e77f502b6213dbed6273c119646453d8124cd9c2ffc832a4071f"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects inch units",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2419,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "7f66a66b0c694ee1805c9f0ef91b5203711baf6db8b43b9f1c31a4dec4257252"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects unknown mode",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.3206,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": "984fd7b06b1519eda6605ae3a3f51634ca893f3d2791b807c1b07ab3631487f9"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects unknown parameter",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.23140000000000002,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": "b7d76695a3378423df79a3da6f4c7d1a6ba8f462d34c84a6725f2f7608eebfca"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects feature display name",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.3196,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": "f9458773e3862c72dcc7e04165d32b571fa685479ea3f8b5908d38af1e201f81"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects noncanonical preset",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2205,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": "884d387547c5a05950335f1a4dfd64e03aadc9652ddf790dff2011be9a0b9200"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects create/edit mixed",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2005,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "59e51fc4310009ba0fcfe9f16c5562f6657c14fbf8b41ecb23b8552e49f660de"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects create numeric extra",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2155,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "feeb95988077816d699255054efdd8aaee7bc5c7138926f3b627f0bb61451d7a"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects string numeric",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.18780000000000002,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "c119d96965c9c8625045ae30578b46a0618f90318a321a73874a9da25610a758"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects boolean numeric",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.1678,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "49d70debe65b4fa66943988d543415ba4ff5a5e785e64b0ccf6e08f8a933e503"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects zero numeric",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.1633,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "0a87fec6294da07f0df89c8738cfb5361dea79512691cc3ad383a49353ec60ef"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects negative numeric",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.1636,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "d04ed0ef5c398870f13bf23cfd6c722cecc1b1433826bd04a57c0397902d004f"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects upper bound",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.1618,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "06a01177aa54e6db68b31aec891bfc88c9b187147779e933a2b9ebb1d4da84e1"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects null numeric",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.16,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "152c0be72db3158825a033f2b4b4d09fa669155eed743b2c9a698295ed99ca0d"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects NaN",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.1641,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "d4b7a2bfcee6712a57c7de63fb2d50ad2fe04925166ec43116624c9fc4b31b3b"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects overflow",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.4304,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "a6878f3565cd421bb8147ba9b831a6e3870b3c5d482ee8030a54fbe0e8d04a75"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects leading zero",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.36300000000000004,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "33a483b09ee4d2d55648a0d0b30651a9f320db279bb8feecec193561a12f185f"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects plus numeric",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2932,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "9ca79d35ec4441e22c7d77894a055c0927cc1c31f797919c24bea49fafd73e76"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects empty output",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.3587,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects oversized intent",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.3271,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "d90545d3ff229062d0072af9d87a9e2cf7e45cb19e2cf52fd771a0086f905f7b"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "usage absent stays null",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.20120000000000002,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_holes.spacing",
+            "valueMm": 50
+          }
+        }
+      },
+      {
+        "name": "invalid usage stays null",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.20450000000000002,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_holes.spacing",
+            "valueMm": 50
+          }
+        }
+      },
+      {
+        "name": "explicit json_object compatibility",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.28450000000000003,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_holes.spacing",
+            "valueMm": 50
+          }
+        }
+      },
+      {
+        "name": "json_object still validates",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.21400000000000002,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "9a4b2afb26058df4defa9be0c424e055f117d2528825562313337f96239bc6d7"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "provider tool call rejected",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_TOOLS_FORBIDDEN",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.33580000000000004,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "provider refusal records unsupported",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.24300000000000002,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "truncated output rejected",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_OUTPUT_INCOMPLETE",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.3078,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "provider envelope malformed",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_RESPONSE_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.511,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "HTTP failure no retry",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_HTTP_FAILED",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2881,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "oversized protocol response",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_RESPONSE_TOO_LARGE",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 1.7334,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "malformed UTF8 counts parse failure",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_RESPONSE_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 4.496,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "cancellation before request",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_CANCELLED",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0528,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "cancellation during request",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_CANCELLED",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 57.7689,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "timeout bounded no retry",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_TIMEOUT",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 1015.8071000000001,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "invalid config makes zero calls",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_CONFIG_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.188,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "current state projection excludes names/references",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 4.8268,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_holes.spacing",
+            "valueMm": 50
+          }
+        }
+      },
+      {
+        "name": "actual loopback HTTP transport and env configuration",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-local",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 26.640700000000002,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_holes.spacing",
+            "valueMm": 50
+          }
+        }
+      }
+    ]
+  },
+  "LiveAcceptanceCases": [
+    {
+      "name": "pair 0 canonical and four edits have equivalent geometry",
+      "success": true
+    },
+    {
+      "name": "pair 1 canonical and four edits have equivalent geometry",
+      "success": true
+    },
+    {
+      "name": "pair 2 canonical and four edits have equivalent geometry",
+      "success": true
+    },
+    {
+      "name": "pair 3 canonical and four edits have equivalent geometry",
+      "success": true
+    },
+    {
+      "name": "native nested scope and exception restore exact flags",
+      "success": true
+    },
+    {
+      "name": "native pre-disabled flags survive scope",
+      "success": true
+    },
+    {
+      "name": "native sketch batch restores flags after exception",
+      "success": true
+    },
+    {
+      "name": "R3 rollback restores geometry/state/flags",
+      "success": true
+    },
+    {
+      "name": "R4 rollback restores geometry/state/flags",
+      "success": true
+    },
+    {
+      "name": "bounded R2 still rebuilds and atomically commits",
+      "success": true
+    },
+    {
+      "name": "exhausted R2 rollback keeps disk state unchanged",
+      "success": true
+    },
+    {
+      "name": "creation persistence failure rolls back only new features",
+      "success": true
+    }
+  ],
+  "Measurements": [
+    {
+      "Operation": "create",
+      "SamplesPerMode": 3,
+      "BaselineWallMedianMs": 28501.3548,
+      "OptimizedWallMedianMs": 23621.6968,
+      "WallReductionPercent": 17.12079314910321,
+      "BaselineRebuildMedianMs": null,
+      "OptimizedRebuildMedianMs": 4.2208000000000006,
+      "BaselineExplicitRebuildCalls": 2,
+      "OptimizedExplicitRebuildCalls": 1,
+      "RawBaselineWallMs": [
+        28501.3548,
+        29061.087000000003,
+        19729.1909
+      ],
+      "RawOptimizedWallMs": [
+        23621.6968,
+        23390.4033,
+        32024.9527
+      ]
+    },
+    {
+      "Operation": "mounting_holes.spacing",
+      "SamplesPerMode": 3,
+      "BaselineWallMedianMs": 34835.5262,
+      "OptimizedWallMedianMs": 17376.277700000002,
+      "WallReductionPercent": 50.119089345060615,
+      "BaselineRebuildMedianMs": 103.21430000000001,
+      "OptimizedRebuildMedianMs": 4.6261,
+      "BaselineExplicitRebuildCalls": 1,
+      "OptimizedExplicitRebuildCalls": 1,
+      "RawBaselineWallMs": [
+        34835.5262,
+        44441.2945,
+        24336.4177
+      ],
+      "RawOptimizedWallMs": [
+        17376.277700000002,
+        24056.188700000002,
+        17211.739
+      ]
+    },
+    {
+      "Operation": "base_plate.thickness",
+      "SamplesPerMode": 3,
+      "BaselineWallMedianMs": 40195.7811,
+      "OptimizedWallMedianMs": 16974.8796,
+      "WallReductionPercent": 57.76949934678592,
+      "BaselineRebuildMedianMs": 118.1759,
+      "OptimizedRebuildMedianMs": 28.1613,
+      "BaselineExplicitRebuildCalls": 1,
+      "OptimizedExplicitRebuildCalls": 1,
+      "RawBaselineWallMs": [
+        40195.7811,
+        40804.154800000004,
+        22175.024100000002
+      ],
+      "RawOptimizedWallMs": [
+        20053.7212,
+        16938.140900000002,
+        16974.8796
+      ]
+    },
+    {
+      "Operation": "mounting_hole_seed.diameter",
+      "SamplesPerMode": 3,
+      "BaselineWallMedianMs": 25412.5607,
+      "OptimizedWallMedianMs": 15129.111700000001,
+      "WallReductionPercent": 40.46600860652347,
+      "BaselineRebuildMedianMs": 109.4291,
+      "OptimizedRebuildMedianMs": 25.3835,
+      "BaselineExplicitRebuildCalls": 1,
+      "OptimizedExplicitRebuildCalls": 1,
+      "RawBaselineWallMs": [
+        25412.5607,
+        35492.9547,
+        22576.7683
+      ],
+      "RawOptimizedWallMs": [
+        15129.111700000001,
+        21895.873600000003,
+        11939.396
+      ]
+    },
+    {
+      "Operation": "outer_edge_fillet.radius",
+      "SamplesPerMode": 3,
+      "BaselineWallMedianMs": 35320.7943,
+      "OptimizedWallMedianMs": 16313.773000000001,
+      "WallReductionPercent": 53.81255341701078,
+      "BaselineRebuildMedianMs": 101.80290000000001,
+      "OptimizedRebuildMedianMs": 13.3239,
+      "BaselineExplicitRebuildCalls": 1,
+      "OptimizedExplicitRebuildCalls": 1,
+      "RawBaselineWallMs": [
+        35320.7943,
+        41004.6483,
+        20602.563400000003
+      ],
+      "RawOptimizedWallMs": [
+        20171.5789,
+        16313.773000000001,
+        13718.890800000001
+      ]
+    }
+  ],
+  "WorkflowMeasurements": [
+    {
+      "Mode": "baseline",
+      "WallMedianMs": 164266.0171,
+      "RawWallMs": [
+        164266.0171,
+        190804.1393,
+        109419.96440000001
+      ]
+    },
+    {
+      "Mode": "optimized",
+      "WallMedianMs": 96352.38630000001,
+      "RawWallMs": [
+        96352.38630000001,
+        102594.37950000001,
+        91869.85810000001
+      ]
+    }
+  ],
+  "ProtectedCadStates": [
+    {
+      "Path": "artifacts/state/9af37689-f21c-4096-af17-63b878455f3d.json",
+      "BeforeSha256": "430F65489CA502DB8FA8FADE51B25768DE6597563CB665A48F0B9D808BBA3CE7",
+      "AfterSha256": "430F65489CA502DB8FA8FADE51B25768DE6597563CB665A48F0B9D808BBA3CE7",
+      "Unchanged": true
+    },
+    {
+      "Path": "artifacts/phase5/live-model-state.json",
+      "BeforeSha256": "635D63C20AF29AAA7FE4F539FEE656991536FDA27BE763D0D4B9615C00A4FDED",
+      "AfterSha256": "635D63C20AF29AAA7FE4F539FEE656991536FDA27BE763D0D4B9615C00A4FDED",
+      "Unchanged": true
+    },
+    {
+      "Path": "artifacts/phase6/live/model-state.json",
+      "BeforeSha256": "8982412D055B8FFD01455FAEBF2FBDEE0C2A5EFA066AE7501C7718697CBAE5EF",
+      "AfterSha256": "8982412D055B8FFD01455FAEBF2FBDEE0C2A5EFA066AE7501C7718697CBAE5EF",
+      "Unchanged": true
+    }
+  ],
+  "ChangedExistingSourceFiles": [
+    {
+      "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\CanonicalCreationTransaction.cs",
+      "BeforeSha256": "745C385A3CFE2FE8E6690E8027EDD1E5224332097C2E3B42B5A4AD1573E326D1",
+      "AfterSha256": "A6DFEED4BCDFE8147EAC2AB7DE8E62BD481202D11C5B223FC6C859294B467F80"
+    },
+    {
+      "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\CanonicalExecutor.cs",
+      "BeforeSha256": "3CB62DBCCC1A493B50E7B661C082FEEAB548607C0F012D226C198DB5BE2C76C7",
+      "AfterSha256": "63B7960FBFD71FFA764A7A6972AE505FADCB91441836CCEDBDE9594851DDF6F4"
+    },
+    {
+      "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\ParameterEditRunner.cs",
+      "BeforeSha256": "7EC8414C53835BB0B992EF360F5BC4E0BEB85CE173A13825C7D441CE7015921E",
+      "AfterSha256": "45CCD5FD70266A85C6ECDC6D26B12295050AC302C7A4AADCCC24F64BE5574D7D"
+    },
+    {
+      "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\Program.cs",
+      "BeforeSha256": "7880FF427807EC1632467C233C4AA67AD5866269C549C2A73B929B3FCCF47446",
+      "AfterSha256": "D7FA5C0BB1EBDBE485C6C7F9BFF1FA293FA4A0C96DD0460DB15DA6E6A89DB089"
+    }
+  ],
+  "NewRuntimeSource": "src/CadHarness.Cli/SolidWorksBatchScope.cs",
+  "BaselineExeSha256": "50D47E3A54B64CE3AF5718F1C1EE4D3B7690066576CB8C36E159F80133937E3C",
+  "MeasurementOptimizedExeSha256": "3BDF75DFA6AE519E0816A8CF70F86486471F7A6B82B9DE41C85D3F2DF147D868",
+  "FinalProductionExeSha256": "B195FF5C828B5714C60E8CEE5ADD19ABD7E82E37F0168EE3D29A4079E48C34F8",
+  "FreshProductionProcessVerified": true,
+  "FinalProductionCommandWallMs": 20353.995000000003,
+  "FinalProductionPlateWallMs": 3072.53,
+  "FinalProductionPlateBoxMm": [
+    -40,
+    -25,
+    0,
+    40,
+    25,
+    10
+  ],
+  "NoPhase8BenchmarkRunner": true,
+  "MeasurementScope": "In-process CLI entry, existing out-of-process COM Runtime; wall includes validation, serialization and state/evidence I/O. Warm-up pair excluded. Explicit rebuild counts exclude native implicit rebuilds.",
+  "EvidencePaths": [
+    "artifacts/phase7/live/verification.json",
+    "artifacts/phase7/final-production-smoke.json",
+    "artifacts/phase7/final-production-validation.json"
+  ],
+  "Limitations": [
+    "Three measured paired samples after one warm-up pair; no statistical or cross-machine performance claim.",
+    "Baseline create rebuild time is uninstrumented; baseline explicit counts come from source call sites.",
+    "Counts exclude native implicit rebuilds/refreshes and rollback outside an already-restored scope.",
+    "Final source adds an unconditional outer finally cleanup safety net to Program after measurement build; no batch settings/rebuild/validation behavior changed. Final production build verified in a fresh CLI process."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "benchmarkVersion": "0.1",
+  "suiteId": "prd-mvp",
+  "planner": "rule",
+  "iterations": 1,
+  "warmupIterations": 0,
+  "partTemplate": "C:\\ProgramData\\SOLIDWORKS\\SOLIDWORKS 2024\\templates\\gb_part.prtdot",
+  "cases": [
+    { "id": "A", "scenario": "canonical_plate" },
+    { "id": "B", "scenario": "rectangular_mounting_plate" },
+    { "id": "C", "scenario": "invalid_fillet" },
+    { "id": "D", "scenario": "stale_reference_recovery" },
+    { "id": "E", "scenario": "unsupported_intent" }
+  ]
+}

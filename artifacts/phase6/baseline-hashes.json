@@ -1,0 +1,106 @@
+[
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\CadHarness.Cli.csproj",
+    "Sha256": "7F60943807384F2CD2A1F91C7088E4B8F75C978EEC6CBFE1072CEFDE1D993A17"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\CadIntent.cs",
+    "Sha256": "ECC6D147C0D0FA17D76DA0255845C67FE81D35A710C7D75BC99E7AA61F9CB29F"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\CadState.cs",
+    "Sha256": "85414A8BFF541F04CF11F098968F8674DAEB6FC0296F1AA4854F5BEDBF12040E"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\CanonicalExecutor.cs",
+    "Sha256": "3CB62DBCCC1A493B50E7B661C082FEEAB548607C0F012D226C198DB5BE2C76C7"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\DocumentIdentityStore.cs",
+    "Sha256": "09A3DBAD053AAC1B40A0C726AFD2FCBFEC78C0ADFC6DDC1E83A7787D0870AAB2"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\EditConfirmation.cs",
+    "Sha256": "0DD502542A4A6CC9A1215511E17BF9AFC85C1994C38DB8C52189E8AEF74108B8"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\EditContext.cs",
+    "Sha256": "B1A5EC3000A35E4BA2C9084672BC5D315659E8C3F3D3D1C6F09C239A02482147"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\ICadPlanner.cs",
+    "Sha256": "413E0721A2899FA10182D2BBC00CF61A18365EA578734909C48BAC2819D9EA3C"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\IntentSchema.cs",
+    "Sha256": "28460E2FAC37F96C76CCB4FC0F35F11BCAE4A5BE1BB371A593612C5003C06149"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\LlmPlanner.cs",
+    "Sha256": "1756F627029CDEF682572EDA66B9C47FE24712B55295E7CA1109C74DBD07BFDA"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\LlmPlannerOptions.cs",
+    "Sha256": "E7AF75C0CD3134AD492A562C2626F7D609769AA5557AFB056FA8370A42A653BE"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\ParameterEditIntent.cs",
+    "Sha256": "47E92BB7CF3157E2B8F171608E965860EEAA8DEFE0F8167888CC1298C67F5EF3"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\ParameterEditRunner.cs",
+    "Sha256": "4E26E793E8683E5718292688071C015A7A635483276A3C479EB99DC721FFDAA9"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\PersistentReferences.cs",
+    "Sha256": "DB3AA6855A367D2C9E0B15B76AFBE1B8D9865E340814811006B6F09A0397EB12"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\PlannerBase.cs",
+    "Sha256": "6455CB3DDA5EB98AC5BB25E3C9DE53AC28E376A66293C654B0A3D035D1CB5388"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\PlannerCli.cs",
+    "Sha256": "5BD2EDDC2A88D8ECC6EDED25BFB2DA24CF9E2AC1C8AC9FCBB1C646FEEAA2CDEA"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\PlanRuntimeBridge.cs",
+    "Sha256": "9126E830133AED6344AE041D2700A593BE1655FDEA5207FA7ED6E93B83F6443E"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\Program.cs",
+    "Sha256": "039D12C823FB6411DFA433B138495C5EA007217C9B1C385003B70C23450F4996"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\ReferenceAudit.cs",
+    "Sha256": "D4460B9382FCABD26F25C199F9E6506CBCD4870471AD2FBDA478DBD8FE98435E"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\RulePlanner.cs",
+    "Sha256": "92C1E980FE8F95C358DCB2B023B65DC2CAA83273F84F95FCD699288C93FC27AA"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\StateCapture.cs",
+    "Sha256": "1843169E1CFA3597C913D4ED76F85804A1235329C4E5178A733F5D115EDDAC99"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\StateSerializer.cs",
+    "Sha256": "AFF0406EA1A70348B09438AE4475AF6C6C886E6A3BD819A87255C2CBAC9AB4B7"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\StateService.cs",
+    "Sha256": "0F9E35DB9F707334DA92C5735AB6299FE8C4E1215503E03A8301C8E8D68FB9BC"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\StrictJson.cs",
+    "Sha256": "BFD5CF4192EE0CC652BD6BDCB44204A29EE150DA32610A684398979E21CCFD27"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\artifacts\\state\\9af37689-f21c-4096-af17-63b878455f3d.json",
+    "Sha256": "430F65489CA502DB8FA8FADE51B25768DE6597563CB665A48F0B9D808BBA3CE7"
+  },
+  {
+    "Path": "D:\\CAD-Harness\\artifacts\\phase5\\live-model-state.json",
+    "Sha256": "635D63C20AF29AAA7FE4F539FEE656991536FDA27BE763D0D4B9615C00A4FDED"
+  }
+]

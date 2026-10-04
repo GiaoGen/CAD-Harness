@@ -1,0 +1,593 @@
+{
+  "title": "零件2",
+  "revision": "32.0.1",
+  "path": "",
+  "activeSketch": false,
+  "dimensionPrompt": true,
+  "needsRebuild": 0,
+  "featureTree": [
+    {
+      "feature": {
+        "name": "收藏",
+        "type": "FavoriteFolder",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "历史记录",
+        "type": "HistoryFolder",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "选择集",
+        "type": "SelectionSetFolder",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "传感器",
+        "type": "SensorFolder",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "设计活页夹",
+        "type": "DocsFolder",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "注解",
+        "type": "DetailCabinet",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": [
+        {
+          "name": "注释",
+          "type": "NotesAreaFtrFolder",
+          "error": 0,
+          "warning": false,
+          "dimensions": [],
+          "sketchStatus": null
+        },
+        {
+          "name": "注释区域1",
+          "type": "AnnotationViewFeat",
+          "error": 0,
+          "warning": false,
+          "dimensions": [],
+          "sketchStatus": null
+        },
+        {
+          "name": "注释1___EndTag___",
+          "type": "FtrFolder",
+          "error": 0,
+          "warning": false,
+          "dimensions": [],
+          "sketchStatus": null
+        }
+      ]
+    },
+    {
+      "feature": {
+        "name": "标注",
+        "type": "InkMarkupFolder",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "光源与相机",
+        "type": "EnvFolder",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": [
+        {
+          "name": "环境光源",
+          "type": "AmbientLight",
+          "error": 0,
+          "warning": false,
+          "dimensions": [],
+          "sketchStatus": null
+        },
+        {
+          "name": "线光源 1",
+          "type": "DirectionLight",
+          "error": 0,
+          "warning": false,
+          "dimensions": [],
+          "sketchStatus": null
+        },
+        {
+          "name": "线光源 2",
+          "type": "DirectionLight",
+          "error": 0,
+          "warning": false,
+          "dimensions": [],
+          "sketchStatus": null
+        },
+        {
+          "name": "线光源 3",
+          "type": "DirectionLight",
+          "error": 0,
+          "warning": false,
+          "dimensions": [],
+          "sketchStatus": null
+        },
+        {
+          "name": "线光源 4",
+          "type": "DirectionLight",
+          "error": 0,
+          "warning": false,
+          "dimensions": [],
+          "sketchStatus": null
+        }
+      ]
+    },
+    {
+      "feature": {
+        "name": "实体",
+        "type": "SolidBodyFolder",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "曲面实体",
+        "type": "SurfaceBodyFolder",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "备注",
+        "type": "CommentsFolder",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "方程式",
+        "type": "EqnFolder",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "材质 <未指定>",
+        "type": "MaterialFolder",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "前视基准面",
+        "type": "RefPlane",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "上视基准面",
+        "type": "RefPlane",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "右视基准面",
+        "type": "RefPlane",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "原点",
+        "type": "OriginProfileFeature",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "Tables",
+        "type": "ConfigTableFolder",
+        "error": 0,
+        "warning": false,
+        "dimensions": [],
+        "sketchStatus": null
+      },
+      "children": [
+        {
+          "name": "Configuration Table",
+          "type": "NativeConfigurationTableFeature",
+          "error": 0,
+          "warning": false,
+          "dimensions": [],
+          "sketchStatus": null
+        }
+      ]
+    },
+    {
+      "feature": {
+        "name": "Sketch.BaseProfile",
+        "type": "ProfileFeature",
+        "error": 0,
+        "warning": false,
+        "dimensions": [
+          {
+            "name": "D1@Sketch.BaseProfile@零件2.Part",
+            "valuesSI": [
+              0.08
+            ]
+          }
+        ],
+        "sketchStatus": 3
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "Extrude.Base",
+        "type": "Extrusion",
+        "error": 0,
+        "warning": false,
+        "dimensions": [
+          {
+            "name": "D1@Extrude.Base@零件2.Part",
+            "valuesSI": [
+              0.01
+            ]
+          }
+        ],
+        "sketchStatus": null
+      },
+      "children": [
+        {
+          "name": "Sketch.BaseProfile",
+          "type": "ProfileFeature",
+          "error": 0,
+          "warning": false,
+          "dimensions": [
+            {
+              "name": "D1@Sketch.BaseProfile@零件2.Part",
+              "valuesSI": [
+                0.08
+              ]
+            }
+          ],
+          "sketchStatus": 3
+        }
+      ]
+    },
+    {
+      "feature": {
+        "name": "Sketch.HoleSeed",
+        "type": "ProfileFeature",
+        "error": 0,
+        "warning": false,
+        "dimensions": [
+          {
+            "name": "D1@Sketch.HoleSeed@零件2.Part",
+            "valuesSI": [
+              0.007999999999999998
+            ]
+          }
+        ],
+        "sketchStatus": 3
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "Hole.MountingSeed",
+        "type": "ICE",
+        "error": 0,
+        "warning": false,
+        "dimensions": [
+          {
+            "name": "D1@Sketch.HoleSeed@零件2.Part",
+            "valuesSI": [
+              0.007999999999999998
+            ]
+          }
+        ],
+        "sketchStatus": null
+      },
+      "children": [
+        {
+          "name": "Sketch.HoleSeed",
+          "type": "ProfileFeature",
+          "error": 0,
+          "warning": false,
+          "dimensions": [
+            {
+              "name": "D1@Sketch.HoleSeed@零件2.Part",
+              "valuesSI": [
+                0.007999999999999998
+              ]
+            }
+          ],
+          "sketchStatus": 3
+        }
+      ]
+    },
+    {
+      "feature": {
+        "name": "Pattern.MountingHoles",
+        "type": "LPattern",
+        "error": 0,
+        "warning": false,
+        "dimensions": [
+          {
+            "name": "D3@Pattern.MountingHoles@零件2.Part",
+            "valuesSI": [
+              0.04
+            ]
+          }
+        ],
+        "sketchStatus": null
+      },
+      "children": []
+    },
+    {
+      "feature": {
+        "name": "Fillet.OuterVerticalEdges",
+        "type": "Fillet",
+        "error": 0,
+        "warning": false,
+        "dimensions": [
+          {
+            "name": "D1@Fillet.OuterVerticalEdges@零件2.Part",
+            "valuesSI": [
+              0.003
+            ]
+          }
+        ],
+        "sketchStatus": null
+      },
+      "children": []
+    }
+  ],
+  "holeSeedDefinition": {
+    "name": "Hole.MountingSeed",
+    "endCondition": 1,
+    "reverseDirection": false
+  },
+  "patternDefinition": {
+    "name": "Pattern.MountingHoles",
+    "count": 2,
+    "spacingMm": 40,
+    "reverseDirection": false,
+    "geometryPattern": false
+  },
+  "filletDefinition": {
+    "name": "Fillet.OuterVerticalEdges",
+    "radiusMm": 3,
+    "type": 0
+  },
+  "baseSketchWidthMm": 80,
+  "baseSketchHeightMm": 50,
+  "solidBodyCount": 1,
+  "allBodyCount": 1,
+  "bodies": [
+    {
+      "approximateSizeMm": [
+        80,
+        50,
+        10
+      ],
+      "exactBoxMm": [
+        -40,
+        -25,
+        0,
+        40,
+        25,
+        10
+      ],
+      "exactSizeMm": [
+        80,
+        50,
+        10
+      ]
+    }
+  ],
+  "throughHoleCount": 2,
+  "holeFaces": [
+    {
+      "radiusMm": 3.999999999999999,
+      "axisPointMm": [
+        -20,
+        0,
+        0
+      ],
+      "axisDirection": [
+        0,
+        0,
+        1
+      ],
+      "zRangeMm": [
+        0,
+        10
+      ],
+      "fullCircleBoundaryEdges": 2,
+      "owner": "Hole.MountingSeed",
+      "areaMm2": 251.32741228718336
+    },
+    {
+      "radiusMm": 3.999999999999999,
+      "axisPointMm": [
+        20,
+        0,
+        0
+      ],
+      "axisDirection": [
+        0,
+        0,
+        1
+      ],
+      "zRangeMm": [
+        0,
+        10
+      ],
+      "fullCircleBoundaryEdges": 2,
+      "owner": "Pattern.MountingHoles",
+      "areaMm2": 251.32741228718336
+    }
+  ],
+  "holeSpacingMm": 40,
+  "radius3FilletFaceCount": 4,
+  "filletFaces": [
+    {
+      "radiusMm": 3,
+      "axisPointMm": [
+        37,
+        -22.000000000000004,
+        10
+      ],
+      "axisDirection": [
+        0,
+        0,
+        -1
+      ],
+      "zRangeMm": [
+        0,
+        10
+      ],
+      "fullCircleBoundaryEdges": 0,
+      "owner": "Fillet.OuterVerticalEdges",
+      "areaMm2": 47.1238898038469
+    },
+    {
+      "radiusMm": 3,
+      "axisPointMm": [
+        -37,
+        -22.000000000000004,
+        10
+      ],
+      "axisDirection": [
+        0,
+        0,
+        -1
+      ],
+      "zRangeMm": [
+        0,
+        10
+      ],
+      "fullCircleBoundaryEdges": 0,
+      "owner": "Fillet.OuterVerticalEdges",
+      "areaMm2": 47.1238898038469
+    },
+    {
+      "radiusMm": 3,
+      "axisPointMm": [
+        -37,
+        22,
+        10
+      ],
+      "axisDirection": [
+        0,
+        0,
+        -1
+      ],
+      "zRangeMm": [
+        0,
+        10
+      ],
+      "fullCircleBoundaryEdges": 0,
+      "owner": "Fillet.OuterVerticalEdges",
+      "areaMm2": 47.1238898038469
+    },
+    {
+      "radiusMm": 3,
+      "axisPointMm": [
+        37,
+        22.000000000000004,
+        10
+      ],
+      "axisDirection": [
+        0,
+        0,
+        -1
+      ],
+      "zRangeMm": [
+        0,
+        10
+      ],
+      "fullCircleBoundaryEdges": 0,
+      "owner": "Fillet.OuterVerticalEdges",
+      "areaMm2": 47.12388980384693
+    }
+  ]
+}

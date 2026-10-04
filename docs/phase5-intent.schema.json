@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "intentVersion",
+    "mode",
+    "units",
+    "createPreset",
+    "parameter",
+    "valueMm"
+  ],
+  "properties": {
+    "intentVersion": {
+      "type": "string",
+      "enum": [
+        "0.1"
+      ]
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "create",
+        "edit"
+      ]
+    },
+    "units": {
+      "type": "string",
+      "enum": [
+        "mm"
+      ]
+    },
+    "createPreset": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "canonical",
+        null
+      ]
+    },
+    "parameter": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "mounting_holes.spacing",
+        "base_plate.thickness",
+        "mounting_hole_seed.diameter",
+        "outer_edge_fillet.radius",
+        null
+      ]
+    },
+    "valueMm": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0,
+      "maximum": 1000
+    }
+  }
+}

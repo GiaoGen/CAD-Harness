@@ -1,0 +1,1 @@
+{"success":false,"step":"load-state","code":"STATE_SCHEMA_INVALID","message":"The canonical semantic entity manifest is incomplete.","hresult":"0x80131500","partialModelMayRemain":false}

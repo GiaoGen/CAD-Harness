@@ -1,0 +1,4118 @@
+{
+  "Phase": 8,
+  "Status": "PHASE 8 BLOCKED",
+  "RunnerImplemented": true,
+  "RunnerVerified": true,
+  "AllPrdCasesPassed": false,
+  "SoleCapabilityBlocker": "PRD Case B requires a rectangular four-hole intent/state/validator unsupported by the existing canonical-only Runtime; its creation and subsequent thickness/diameter edits cannot run.",
+  "CompletedUtc": "2026-10-04T00:52:27.9971163Z",
+  "ResultPath": "D:\\CAD-Harness\\artifacts\\phase8\\live\\runs\\18341e4b-0c7a-4309-b8dc-fe5ac609b106\\results.json",
+  "ManifestSha256": "BF425A174C7B0E1430534027F9833B362BF73AE4E58048458A8E9297D8F724C6",
+  "RuntimeExeSha256": "1D3E8C7586F8A65261BE90DCE5D79C19499C681496C0BC08BEC29CE4D69BC261",
+  "SolidWorksRevision": "32.0.1",
+  "SuiteWallMs": 411644.3151,
+  "Summary": {
+    "RequiredCases": 10,
+    "PassedCases": 8,
+    "FailedCases": 0,
+    "BlockedCases": 2,
+    "TotalSuccess": 0.8,
+    "EditCommands": 12,
+    "SuccessfulEdits": 10,
+    "EditSuccess": 0.8333333333333334,
+    "RollbackAttempts": 2,
+    "SuccessfulRollbacks": 2,
+    "RollbackSuccess": 1,
+    "LlmCalls": 0,
+    "LlmWallMs": 0,
+    "ParseFailures": 0,
+    "UnsupportedIntents": 4,
+    "SemanticSafetyFailures": 0,
+    "Rebuilds": 20,
+    "DirectSolidWorksApiOperations": 182,
+    "RecoveryAttempts": 4
+  },
+  "CommandMeasurements": [
+    {
+      "Case": "A",
+      "Iteration": 0,
+      "Command": "Create canonical part",
+      "Mode": "create",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": true,
+      "WallMs": 16232.589100000001,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 4.6837,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "6259343890644cd07df3a0d1c83518fd5285c1e25e312313465907779678b219"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 16223.112700000001,
+        "SolidWorksExecutionMs": 2280.3373000000006,
+        "RebuildMs": 4.4397,
+        "Rebuilds": 1,
+        "ValidationMs": 6035.1587,
+        "ValidationCalls": 1,
+        "DirectSolidWorksApiOperations": 20,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "ISketchManager.InsertSketch",
+            "Calls": 4,
+            "Exceptions": 0,
+            "WallMs": 1143.3402
+          },
+          {
+            "Api": "ISketchManager.CreateCenterRectangle",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 366.848
+          },
+          {
+            "Api": "IModelDoc2.AddHorizontalDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 18.0278
+          },
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 3,
+            "Exceptions": 0,
+            "WallMs": 6.0791
+          },
+          {
+            "Api": "IModelDoc2.AddVerticalDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 17.4142
+          },
+          {
+            "Api": "IFeatureManager.FeatureExtrusion3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 37.615
+          },
+          {
+            "Api": "ISketchManager.CreateCircleByRadius",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 4.3025
+          },
+          {
+            "Api": "IModelDoc2.SketchAddConstraints",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 3.4944
+          },
+          {
+            "Api": "IModelDoc2.AddDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 16.028200000000002
+          },
+          {
+            "Api": "IFeatureManager.FeatureCut4",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 43.624700000000004
+          },
+          {
+            "Api": "IFeatureManager.FeatureLinearPattern5",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 21.8565
+          },
+          {
+            "Api": "IFeatureManager.FeatureFillet3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 25.6724
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 4.4397
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 59.0581
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 512.5365
+          }
+        ]
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": null,
+      "StateSha256After": "64A48C81CF80CDD7D6D61F6D113A27D4FDCC036D2478E48E360B2AD5064E140F",
+      "RevisionBefore": null,
+      "RevisionAfter": 0
+    },
+    {
+      "Case": "A",
+      "Iteration": 0,
+      "Command": "Set mounting_holes.spacing to 50 mm",
+      "Mode": "edit",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": true,
+      "WallMs": 9349.5629,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.5543,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 9336.417800000001,
+        "SolidWorksExecutionMs": 215.56650000000002,
+        "RebuildMs": 4.5402000000000005,
+        "Rebuilds": 1,
+        "ValidationMs": 6207.822900000001,
+        "ValidationCalls": 3,
+        "DirectSolidWorksApiOperations": 9,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 1.1893
+          },
+          {
+            "Api": "ISketchManager.InsertSketch",
+            "Calls": 2,
+            "Exceptions": 0,
+            "WallMs": 103.90480000000001
+          },
+          {
+            "Api": "ISketchRelationManager.DeleteRelation",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 3.2759
+          },
+          {
+            "Api": "ISketchPoint.SetCoords",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 17.9188
+          },
+          {
+            "Api": "IModelDoc2.SketchAddConstraints",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 8.1998
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 4.5402000000000005
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 60.1379
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 16.3998
+          }
+        ]
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": "64A48C81CF80CDD7D6D61F6D113A27D4FDCC036D2478E48E360B2AD5064E140F",
+      "StateSha256After": "BC6A8F0BAA7E29FEC551811D9A3236E839A8FCB1D63B19487BCF38578859157E",
+      "RevisionBefore": 0,
+      "RevisionAfter": 1
+    },
+    {
+      "Case": "A",
+      "Iteration": 0,
+      "Command": "Set base_plate.thickness to 12 mm",
+      "Mode": "edit",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": true,
+      "WallMs": 12693.565700000001,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.1291,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "cef661fa62b09787cf9d56f563146291792174effa79f667abbf495c3971c0e5"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 12685.678,
+        "SolidWorksExecutionMs": 95.60340000000001,
+        "RebuildMs": 26.7966,
+        "Rebuilds": 1,
+        "ValidationMs": 8649.2841,
+        "ValidationCalls": 3,
+        "DirectSolidWorksApiOperations": 4,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 0.8976000000000001
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 26.7966
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 52.9842
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 14.925
+          }
+        ]
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": "BC6A8F0BAA7E29FEC551811D9A3236E839A8FCB1D63B19487BCF38578859157E",
+      "StateSha256After": "A0861EE2574F78F6E7D958C658FED4795CB1CD217C3287B613148A70CC42A4D9",
+      "RevisionBefore": 1,
+      "RevisionAfter": 2
+    },
+    {
+      "Case": "A",
+      "Iteration": 0,
+      "Command": "Set mounting_hole_seed.diameter to 10 mm",
+      "Mode": "edit",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": true,
+      "WallMs": 13601.617400000001,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.129,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "53ab3d9b042ef7943499ce964a1da437d3847d5afdc4d4b8565ef5435d0f1346"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 13591.294600000001,
+        "SolidWorksExecutionMs": 91.8364,
+        "RebuildMs": 21.423000000000002,
+        "Rebuilds": 1,
+        "ValidationMs": 9302.569300000001,
+        "ValidationCalls": 3,
+        "DirectSolidWorksApiOperations": 4,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 0.8742000000000001
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 21.423000000000002
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 55.250800000000005
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 14.288400000000001
+          }
+        ]
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": "A0861EE2574F78F6E7D958C658FED4795CB1CD217C3287B613148A70CC42A4D9",
+      "StateSha256After": "EB69F5CA81D567C88282944EB31C5DE1110FECA37878CADDE98818DAEDA0F1B0",
+      "RevisionBefore": 2,
+      "RevisionAfter": 3
+    },
+    {
+      "Case": "A",
+      "Iteration": 0,
+      "Command": "Set outer_edge_fillet.radius to 4 mm",
+      "Mode": "edit",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": true,
+      "WallMs": 14143.9881,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.12150000000000001,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "990b46d98fe11bc51ff57f927d23b014790447f49c7540ad0573715924f8d4c4"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 14134.7247,
+        "SolidWorksExecutionMs": 82.94590000000001,
+        "RebuildMs": 12.317400000000001,
+        "Rebuilds": 1,
+        "ValidationMs": 9584.737300000003,
+        "ValidationCalls": 3,
+        "DirectSolidWorksApiOperations": 4,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 1.2217
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 12.317400000000001
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 53.098200000000006
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 16.308600000000002
+          }
+        ]
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": "EB69F5CA81D567C88282944EB31C5DE1110FECA37878CADDE98818DAEDA0F1B0",
+      "StateSha256After": "C3FB2B5BAD061FBCB95C7051DB7A02DF6E0C4D91A973E2AD2E9C54882F886470",
+      "RevisionBefore": 3,
+      "RevisionAfter": 4
+    },
+    {
+      "Case": "B",
+      "Iteration": 0,
+      "Command": "Create a 100 x 60 x 8 mm plate with 4 diameter 6 mm through holes in rectangular symmetric placement.",
+      "Mode": "plan",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": false,
+      "RuntimeSuccess": false,
+      "WallMs": 0.7032,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.2772,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 1,
+        "OutputSha256": null
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 0,
+        "SolidWorksExecutionMs": 0,
+        "RebuildMs": 0,
+        "Rebuilds": 0,
+        "ValidationMs": 0,
+        "ValidationCalls": 0,
+        "DirectSolidWorksApiOperations": 0,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": []
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": null,
+      "StateSha256After": null,
+      "RevisionBefore": null,
+      "RevisionAfter": null
+    },
+    {
+      "Case": "C",
+      "Iteration": 0,
+      "Command": "Create canonical part",
+      "Mode": "create",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": true,
+      "WallMs": 14937.6672,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.20570000000000002,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "6259343890644cd07df3a0d1c83518fd5285c1e25e312313465907779678b219"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 14935.715400000001,
+        "SolidWorksExecutionMs": 2288.6496,
+        "RebuildMs": 3.8024,
+        "Rebuilds": 1,
+        "ValidationMs": 5605.377,
+        "ValidationCalls": 1,
+        "DirectSolidWorksApiOperations": 20,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "ISketchManager.InsertSketch",
+            "Calls": 4,
+            "Exceptions": 0,
+            "WallMs": 1132.6105
+          },
+          {
+            "Api": "ISketchManager.CreateCenterRectangle",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 382.60130000000004
+          },
+          {
+            "Api": "IModelDoc2.AddHorizontalDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 16.4181
+          },
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 3,
+            "Exceptions": 0,
+            "WallMs": 4.490600000000001
+          },
+          {
+            "Api": "IModelDoc2.AddVerticalDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 17.4033
+          },
+          {
+            "Api": "IFeatureManager.FeatureExtrusion3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 42.9041
+          },
+          {
+            "Api": "ISketchManager.CreateCircleByRadius",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 2.3798
+          },
+          {
+            "Api": "IModelDoc2.SketchAddConstraints",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 2.9885
+          },
+          {
+            "Api": "IModelDoc2.AddDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 15.8307
+          },
+          {
+            "Api": "IFeatureManager.FeatureCut4",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 48.343
+          },
+          {
+            "Api": "IFeatureManager.FeatureLinearPattern5",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 20.602700000000002
+          },
+          {
+            "Api": "IFeatureManager.FeatureFillet3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 24.0151
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 3.8024
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 59.1531
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 515.1064
+          }
+        ]
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": null,
+      "StateSha256After": "AE9094AB5A39A5E3150873C55AEDE96B051AD6FE19AD314E76ACC7CD7A836B48",
+      "RevisionBefore": null,
+      "RevisionAfter": 0
+    },
+    {
+      "Case": "C",
+      "Iteration": 0,
+      "Command": "Set outer_edge_fillet.radius to 100 mm",
+      "Mode": "edit",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": false,
+      "WallMs": 7680.9222,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.1391,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "9ea2d7013b8226889dca31df54e5969dc9b438785debc22ad4d0ece1c5774857"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 7671.5001,
+        "SolidWorksExecutionMs": 111.01750000000001,
+        "RebuildMs": 34.6597,
+        "Rebuilds": 2,
+        "ValidationMs": 5536.951400000001,
+        "ValidationCalls": 2,
+        "DirectSolidWorksApiOperations": 6,
+        "RecoveryAttempts": 1,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 2,
+            "Exceptions": 0,
+            "WallMs": 1.778
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 2,
+            "Exceptions": 0,
+            "WallMs": 34.6597
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 58.3322
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 16.247600000000002
+          }
+        ]
+      },
+      "RollbackSuccess": true,
+      "StateSha256Before": "AE9094AB5A39A5E3150873C55AEDE96B051AD6FE19AD314E76ACC7CD7A836B48",
+      "StateSha256After": "AE9094AB5A39A5E3150873C55AEDE96B051AD6FE19AD314E76ACC7CD7A836B48",
+      "RevisionBefore": 0,
+      "RevisionAfter": 0
+    },
+    {
+      "Case": "D",
+      "Iteration": 0,
+      "Command": "Create canonical part",
+      "Mode": "create",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": true,
+      "WallMs": 15419.371200000001,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.2041,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "6259343890644cd07df3a0d1c83518fd5285c1e25e312313465907779678b219"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 15417.901,
+        "SolidWorksExecutionMs": 2292.2002999999995,
+        "RebuildMs": 4.4947,
+        "Rebuilds": 1,
+        "ValidationMs": 6075.719300000001,
+        "ValidationCalls": 1,
+        "DirectSolidWorksApiOperations": 20,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "ISketchManager.InsertSketch",
+            "Calls": 4,
+            "Exceptions": 0,
+            "WallMs": 1148.7032
+          },
+          {
+            "Api": "ISketchManager.CreateCenterRectangle",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 379.0523
+          },
+          {
+            "Api": "IModelDoc2.AddHorizontalDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 19.302200000000003
+          },
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 3,
+            "Exceptions": 0,
+            "WallMs": 4.7149
+          },
+          {
+            "Api": "IModelDoc2.AddVerticalDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 16.7653
+          },
+          {
+            "Api": "IFeatureManager.FeatureExtrusion3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 37.6569
+          },
+          {
+            "Api": "ISketchManager.CreateCircleByRadius",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 2.6354
+          },
+          {
+            "Api": "IModelDoc2.SketchAddConstraints",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 3.1309
+          },
+          {
+            "Api": "IModelDoc2.AddDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 17.061700000000002
+          },
+          {
+            "Api": "IFeatureManager.FeatureCut4",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 39.453
+          },
+          {
+            "Api": "IFeatureManager.FeatureLinearPattern5",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 21.4295
+          },
+          {
+            "Api": "IFeatureManager.FeatureFillet3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 23.341800000000003
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 4.4947
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 61.333800000000004
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 513.1247000000001
+          }
+        ]
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": null,
+      "StateSha256After": "C7D63AB0665915EB8F6CB94F7DDE00751303C013515A9F8C672FCC6C621A6787",
+      "RevisionBefore": null,
+      "RevisionAfter": 0
+    },
+    {
+      "Case": "D",
+      "Iteration": 0,
+      "Command": "Set base_plate.thickness to 12 mm",
+      "Mode": "edit",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": true,
+      "WallMs": 16744.5991,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.09430000000000001,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "cef661fa62b09787cf9d56f563146291792174effa79f667abbf495c3971c0e5"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 16736.4337,
+        "SolidWorksExecutionMs": 108.14020000000002,
+        "RebuildMs": 24.980900000000002,
+        "Rebuilds": 1,
+        "ValidationMs": 13162.7087,
+        "ValidationCalls": 3,
+        "DirectSolidWorksApiOperations": 4,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 3.6258000000000004
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 24.980900000000002
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 60.7507
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 18.7828
+          }
+        ]
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": "C7D63AB0665915EB8F6CB94F7DDE00751303C013515A9F8C672FCC6C621A6787",
+      "StateSha256After": "DA8C66FA08F0254BA0B87785920ECE3BA854433284A0941185DB449F73B01782",
+      "RevisionBefore": 0,
+      "RevisionAfter": 1
+    },
+    {
+      "Case": "E",
+      "Iteration": 0,
+      "Command": "Create an aerodynamic turbine blade with optimized cooling passages.",
+      "Mode": "plan",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": false,
+      "RuntimeSuccess": false,
+      "WallMs": 0.1646,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.0784,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 1,
+        "OutputSha256": null
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 0,
+        "SolidWorksExecutionMs": 0,
+        "RebuildMs": 0,
+        "Rebuilds": 0,
+        "ValidationMs": 0,
+        "ValidationCalls": 0,
+        "DirectSolidWorksApiOperations": 0,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": []
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": null,
+      "StateSha256After": null,
+      "RevisionBefore": null,
+      "RevisionAfter": null
+    },
+    {
+      "Case": "A",
+      "Iteration": 1,
+      "Command": "Create canonical part",
+      "Mode": "create",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": true,
+      "WallMs": 15418.839100000001,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.2127,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "6259343890644cd07df3a0d1c83518fd5285c1e25e312313465907779678b219"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 15417.7247,
+        "SolidWorksExecutionMs": 2493.9193000000005,
+        "RebuildMs": 4.541,
+        "Rebuilds": 1,
+        "ValidationMs": 5373.1362,
+        "ValidationCalls": 1,
+        "DirectSolidWorksApiOperations": 20,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "ISketchManager.InsertSketch",
+            "Calls": 4,
+            "Exceptions": 0,
+            "WallMs": 1170.4807000000003
+          },
+          {
+            "Api": "ISketchManager.CreateCenterRectangle",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 520.4003
+          },
+          {
+            "Api": "IModelDoc2.AddHorizontalDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 19.1918
+          },
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 3,
+            "Exceptions": 0,
+            "WallMs": 4.8325
+          },
+          {
+            "Api": "IModelDoc2.AddVerticalDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 20.9509
+          },
+          {
+            "Api": "IFeatureManager.FeatureExtrusion3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 41.310900000000004
+          },
+          {
+            "Api": "ISketchManager.CreateCircleByRadius",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 2.7343
+          },
+          {
+            "Api": "IModelDoc2.SketchAddConstraints",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 3.5142
+          },
+          {
+            "Api": "IModelDoc2.AddDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 21.1115
+          },
+          {
+            "Api": "IFeatureManager.FeatureCut4",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 44.2091
+          },
+          {
+            "Api": "IFeatureManager.FeatureLinearPattern5",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 23.1153
+          },
+          {
+            "Api": "IFeatureManager.FeatureFillet3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 25.3142
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 4.541
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 78.2433
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 513.9693
+          }
+        ]
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": null,
+      "StateSha256After": "363696D44AA1B3EB3C440B2F5C4C77F138A2E128710406130871D576909F607C",
+      "RevisionBefore": null,
+      "RevisionAfter": 0
+    },
+    {
+      "Case": "A",
+      "Iteration": 1,
+      "Command": "Set mounting_holes.spacing to 50 mm",
+      "Mode": "edit",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": true,
+      "WallMs": 14129.741,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.0922,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 14119.6527,
+        "SolidWorksExecutionMs": 211.37290000000004,
+        "RebuildMs": 4.3424000000000005,
+        "Rebuilds": 1,
+        "ValidationMs": 9138.3932,
+        "ValidationCalls": 3,
+        "DirectSolidWorksApiOperations": 9,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 0.8975000000000001
+          },
+          {
+            "Api": "ISketchManager.InsertSketch",
+            "Calls": 2,
+            "Exceptions": 0,
+            "WallMs": 90.35430000000001
+          },
+          {
+            "Api": "ISketchRelationManager.DeleteRelation",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 2.2152000000000003
+          },
+          {
+            "Api": "ISketchPoint.SetCoords",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 20.2975
+          },
+          {
+            "Api": "IModelDoc2.SketchAddConstraints",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 9.1045
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 4.3424000000000005
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 68.8041
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 15.3574
+          }
+        ]
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": "363696D44AA1B3EB3C440B2F5C4C77F138A2E128710406130871D576909F607C",
+      "StateSha256After": "B9A068671A5011CE162A7849356CB069B2A3FD017AE2123971A41B4A1F22A225",
+      "RevisionBefore": 0,
+      "RevisionAfter": 1
+    },
+    {
+      "Case": "A",
+      "Iteration": 1,
+      "Command": "Set base_plate.thickness to 12 mm",
+      "Mode": "edit",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": true,
+      "WallMs": 16991.3665,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.07980000000000001,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "cef661fa62b09787cf9d56f563146291792174effa79f667abbf495c3971c0e5"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 16982.9034,
+        "SolidWorksExecutionMs": 105.54990000000001,
+        "RebuildMs": 24.0566,
+        "Rebuilds": 1,
+        "ValidationMs": 10983.6169,
+        "ValidationCalls": 3,
+        "DirectSolidWorksApiOperations": 4,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 0.8766
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 24.0566
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 57.479800000000004
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 23.1369
+          }
+        ]
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": "B9A068671A5011CE162A7849356CB069B2A3FD017AE2123971A41B4A1F22A225",
+      "StateSha256After": "BFF949298007DFF99628D1C464C5B3B7E41D1E995381ACC5BCE9419AEB5DA735",
+      "RevisionBefore": 1,
+      "RevisionAfter": 2
+    },
+    {
+      "Case": "A",
+      "Iteration": 1,
+      "Command": "Set mounting_hole_seed.diameter to 10 mm",
+      "Mode": "edit",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": true,
+      "WallMs": 17715.2025,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.09190000000000001,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "53ab3d9b042ef7943499ce964a1da437d3847d5afdc4d4b8565ef5435d0f1346"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 17696.3193,
+        "SolidWorksExecutionMs": 98.40650000000001,
+        "RebuildMs": 20.7041,
+        "Rebuilds": 1,
+        "ValidationMs": 12596.8109,
+        "ValidationCalls": 3,
+        "DirectSolidWorksApiOperations": 4,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 1.0702
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 20.7041
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 62.6942
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 13.938
+          }
+        ]
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": "BFF949298007DFF99628D1C464C5B3B7E41D1E995381ACC5BCE9419AEB5DA735",
+      "StateSha256After": "2E95C103A8A5B21D54AAE7D81B99DCF5630D5B7A2E01D9663EB5DFD2540E704E",
+      "RevisionBefore": 2,
+      "RevisionAfter": 3
+    },
+    {
+      "Case": "A",
+      "Iteration": 1,
+      "Command": "Set outer_edge_fillet.radius to 4 mm",
+      "Mode": "edit",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": true,
+      "WallMs": 18767.5799,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.08020000000000001,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "990b46d98fe11bc51ff57f927d23b014790447f49c7540ad0573715924f8d4c4"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 18756.191600000002,
+        "SolidWorksExecutionMs": 85.4121,
+        "RebuildMs": 10.6518,
+        "Rebuilds": 1,
+        "ValidationMs": 13715.356800000001,
+        "ValidationCalls": 3,
+        "DirectSolidWorksApiOperations": 4,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 0.8179000000000001
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 10.6518
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 58.758900000000004
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 15.1835
+          }
+        ]
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": "2E95C103A8A5B21D54AAE7D81B99DCF5630D5B7A2E01D9663EB5DFD2540E704E",
+      "StateSha256After": "6B909974BF6DB1484C1F79345C7C05AC94C0C3825D1129B27EA05700B8256C21",
+      "RevisionBefore": 3,
+      "RevisionAfter": 4
+    },
+    {
+      "Case": "B",
+      "Iteration": 1,
+      "Command": "Create a 100 x 60 x 8 mm plate with 4 diameter 6 mm through holes in rectangular symmetric placement.",
+      "Mode": "plan",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": false,
+      "RuntimeSuccess": false,
+      "WallMs": 0.1769,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.0844,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 1,
+        "OutputSha256": null
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 0,
+        "SolidWorksExecutionMs": 0,
+        "RebuildMs": 0,
+        "Rebuilds": 0,
+        "ValidationMs": 0,
+        "ValidationCalls": 0,
+        "DirectSolidWorksApiOperations": 0,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": []
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": null,
+      "StateSha256After": null,
+      "RevisionBefore": null,
+      "RevisionAfter": null
+    },
+    {
+      "Case": "C",
+      "Iteration": 1,
+      "Command": "Create canonical part",
+      "Mode": "create",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": true,
+      "WallMs": 12587.4348,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.231,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "6259343890644cd07df3a0d1c83518fd5285c1e25e312313465907779678b219"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 12585.376900000001,
+        "SolidWorksExecutionMs": 2359.4825000000005,
+        "RebuildMs": 4.333,
+        "Rebuilds": 1,
+        "ValidationMs": 2968.7614000000003,
+        "ValidationCalls": 1,
+        "DirectSolidWorksApiOperations": 20,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "ISketchManager.InsertSketch",
+            "Calls": 4,
+            "Exceptions": 0,
+            "WallMs": 1158.4329000000002
+          },
+          {
+            "Api": "ISketchManager.CreateCenterRectangle",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 416.12730000000005
+          },
+          {
+            "Api": "IModelDoc2.AddHorizontalDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 17.3613
+          },
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 3,
+            "Exceptions": 0,
+            "WallMs": 5.167800000000001
+          },
+          {
+            "Api": "IModelDoc2.AddVerticalDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 17.9912
+          },
+          {
+            "Api": "IFeatureManager.FeatureExtrusion3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 46.1986
+          },
+          {
+            "Api": "ISketchManager.CreateCircleByRadius",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 3.1354
+          },
+          {
+            "Api": "IModelDoc2.SketchAddConstraints",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 3.2111
+          },
+          {
+            "Api": "IModelDoc2.AddDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 21.9368
+          },
+          {
+            "Api": "IFeatureManager.FeatureCut4",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 42.6075
+          },
+          {
+            "Api": "IFeatureManager.FeatureLinearPattern5",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 23.5867
+          },
+          {
+            "Api": "IFeatureManager.FeatureFillet3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 24.119300000000003
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 4.333
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 58.4673
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 516.8063000000001
+          }
+        ]
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": null,
+      "StateSha256After": "6107B1C6C41132FB923A37D020E6278AAF6A65845E55040514487E929C586D3A",
+      "RevisionBefore": null,
+      "RevisionAfter": 0
+    },
+    {
+      "Case": "C",
+      "Iteration": 1,
+      "Command": "Set outer_edge_fillet.radius to 100 mm",
+      "Mode": "edit",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": false,
+      "WallMs": 8424.1649,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.0927,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "9ea2d7013b8226889dca31df54e5969dc9b438785debc22ad4d0ece1c5774857"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 8414.209700000001,
+        "SolidWorksExecutionMs": 113.9204,
+        "RebuildMs": 33.4852,
+        "Rebuilds": 2,
+        "ValidationMs": 5875.477900000001,
+        "ValidationCalls": 2,
+        "DirectSolidWorksApiOperations": 6,
+        "RecoveryAttempts": 1,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 2,
+            "Exceptions": 0,
+            "WallMs": 1.8208000000000002
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 2,
+            "Exceptions": 0,
+            "WallMs": 33.4852
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 61.339200000000005
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 17.2752
+          }
+        ]
+      },
+      "RollbackSuccess": true,
+      "StateSha256Before": "6107B1C6C41132FB923A37D020E6278AAF6A65845E55040514487E929C586D3A",
+      "StateSha256After": "6107B1C6C41132FB923A37D020E6278AAF6A65845E55040514487E929C586D3A",
+      "RevisionBefore": 0,
+      "RevisionAfter": 0
+    },
+    {
+      "Case": "D",
+      "Iteration": 1,
+      "Command": "Create canonical part",
+      "Mode": "create",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": true,
+      "WallMs": 15191.8171,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.21610000000000001,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "6259343890644cd07df3a0d1c83518fd5285c1e25e312313465907779678b219"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 15190.7135,
+        "SolidWorksExecutionMs": 2326.8221999999996,
+        "RebuildMs": 4.3188,
+        "Rebuilds": 1,
+        "ValidationMs": 5936.8727,
+        "ValidationCalls": 1,
+        "DirectSolidWorksApiOperations": 20,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "ISketchManager.InsertSketch",
+            "Calls": 4,
+            "Exceptions": 0,
+            "WallMs": 1154.2416999999998
+          },
+          {
+            "Api": "ISketchManager.CreateCenterRectangle",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 389.4169
+          },
+          {
+            "Api": "IModelDoc2.AddHorizontalDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 18.7038
+          },
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 3,
+            "Exceptions": 0,
+            "WallMs": 4.3544
+          },
+          {
+            "Api": "IModelDoc2.AddVerticalDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 19.3981
+          },
+          {
+            "Api": "IFeatureManager.FeatureExtrusion3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 39.7843
+          },
+          {
+            "Api": "ISketchManager.CreateCircleByRadius",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 3.2436000000000003
+          },
+          {
+            "Api": "IModelDoc2.SketchAddConstraints",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 3.2586
+          },
+          {
+            "Api": "IModelDoc2.AddDimension2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 18.6871
+          },
+          {
+            "Api": "IFeatureManager.FeatureCut4",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 42.1969
+          },
+          {
+            "Api": "IFeatureManager.FeatureLinearPattern5",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 24.797800000000002
+          },
+          {
+            "Api": "IFeatureManager.FeatureFillet3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 24.023
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 4.3188
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 65.7587
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 514.6385
+          }
+        ]
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": null,
+      "StateSha256After": "204A0DB03FCD45DAD36F75721426AEEFF93AC892C07C1089A0FA396F0E2AB8E8",
+      "RevisionBefore": null,
+      "RevisionAfter": 0
+    },
+    {
+      "Case": "D",
+      "Iteration": 1,
+      "Command": "Set base_plate.thickness to 12 mm",
+      "Mode": "edit",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": true,
+      "RuntimeSuccess": true,
+      "WallMs": 15366.0681,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.092,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 0,
+        "OutputSha256": "cef661fa62b09787cf9d56f563146291792174effa79f667abbf495c3971c0e5"
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 15358.5557,
+        "SolidWorksExecutionMs": 117.54729999999999,
+        "RebuildMs": 22.593,
+        "Rebuilds": 1,
+        "ValidationMs": 11551.5408,
+        "ValidationCalls": 3,
+        "DirectSolidWorksApiOperations": 4,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": [
+          {
+            "Api": "IDimension.SetSystemValue3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 0.8665
+          },
+          {
+            "Api": "IModelDoc2.EditRebuild3",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 22.593
+          },
+          {
+            "Api": "IFeatureManager.UpdateFeatureTree",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 75.5582
+          },
+          {
+            "Api": "IModelDoc2.GraphicsRedraw2",
+            "Calls": 1,
+            "Exceptions": 0,
+            "WallMs": 18.529600000000002
+          }
+        ]
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": "204A0DB03FCD45DAD36F75721426AEEFF93AC892C07C1089A0FA396F0E2AB8E8",
+      "StateSha256After": "2ADD39F0BB42E26F3803206E62201995E3B50C6CE8698E54B7F1FA5426B96561",
+      "RevisionBefore": 0,
+      "RevisionAfter": 1
+    },
+    {
+      "Case": "E",
+      "Iteration": 1,
+      "Command": "Create an aerodynamic turbine blade with optimized cooling passages.",
+      "Mode": "plan",
+      "ExpectedOutcomePassed": true,
+      "RuntimeEntered": false,
+      "RuntimeSuccess": false,
+      "WallMs": 0.21380000000000002,
+      "Planner": {
+        "Provider": "rule",
+        "Model": null,
+        "PlannerCalls": 1,
+        "Calls": 0,
+        "LatencyMs": 0.0946,
+        "InputTokens": null,
+        "OutputTokens": null,
+        "ParseFailures": 0,
+        "UnsupportedIntents": 1,
+        "OutputSha256": null
+      },
+      "TotalTokens": null,
+      "Runtime": {
+        "CompileMs": 0,
+        "CompilationMode": "prebuilt typed Runtime; no per-command C# compilation",
+        "RuntimeWallMs": 0,
+        "SolidWorksExecutionMs": 0,
+        "RebuildMs": 0,
+        "Rebuilds": 0,
+        "ValidationMs": 0,
+        "ValidationCalls": 0,
+        "DirectSolidWorksApiOperations": 0,
+        "RecoveryAttempts": 0,
+        "ApiCountCoverage": "instrumented modeling, parameter mutation, sketch relation, explicit rebuild and final tree/redraw invocations; excludes selection, metadata, property getters/setters, validation queries and implicit native operations; not a total COM round-trip count",
+        "ApiOperations": []
+      },
+      "RollbackSuccess": null,
+      "StateSha256Before": null,
+      "StateSha256After": null,
+      "RevisionBefore": null,
+      "RevisionAfter": null
+    }
+  ],
+  "CaseOutcomes": [
+    {
+      "CaseId": "A",
+      "Iteration": 0,
+      "Status": "PASSED",
+      "WallMs": 78155.4736,
+      "SetupMs": 1743.008,
+      "AuditValidationMs": 9190.4622,
+      "SettingsRestored": true,
+      "NaturallyInvalidReferencesAfterEdit": null,
+      "ControlledReferenceInvalidation": false,
+      "SemanticFaceRecovered": null
+    },
+    {
+      "CaseId": "B",
+      "Iteration": 0,
+      "Status": "BLOCKED_CAPABILITY",
+      "WallMs": 2568.9545000000003,
+      "SetupMs": 1607.4778000000001,
+      "AuditValidationMs": 0,
+      "SettingsRestored": true,
+      "NaturallyInvalidReferencesAfterEdit": null,
+      "ControlledReferenceInvalidation": false,
+      "SemanticFaceRecovered": null
+    },
+    {
+      "CaseId": "C",
+      "Iteration": 0,
+      "Status": "PASSED",
+      "WallMs": 47486.9787,
+      "SetupMs": 1522.9917,
+      "AuditValidationMs": 20327.8125,
+      "SettingsRestored": true,
+      "NaturallyInvalidReferencesAfterEdit": null,
+      "ControlledReferenceInvalidation": false,
+      "SemanticFaceRecovered": null
+    },
+    {
+      "CaseId": "D",
+      "Iteration": 0,
+      "Status": "PASSED",
+      "WallMs": 65839.1811,
+      "SetupMs": 1598.4206000000001,
+      "AuditValidationMs": 10233.196100000001,
+      "SettingsRestored": true,
+      "NaturallyInvalidReferencesAfterEdit": 0,
+      "ControlledReferenceInvalidation": true,
+      "SemanticFaceRecovered": true
+    },
+    {
+      "CaseId": "E",
+      "Iteration": 0,
+      "Status": "PASSED",
+      "WallMs": 2709.4056,
+      "SetupMs": 1681.1085,
+      "AuditValidationMs": 0,
+      "SettingsRestored": true,
+      "NaturallyInvalidReferencesAfterEdit": null,
+      "ControlledReferenceInvalidation": false,
+      "SemanticFaceRecovered": null
+    },
+    {
+      "CaseId": "A",
+      "Iteration": 1,
+      "Status": "PASSED",
+      "WallMs": 97217.00660000001,
+      "SetupMs": 1497.9967000000001,
+      "AuditValidationMs": 11101.8875,
+      "SettingsRestored": true,
+      "NaturallyInvalidReferencesAfterEdit": null,
+      "ControlledReferenceInvalidation": false,
+      "SemanticFaceRecovered": null
+    },
+    {
+      "CaseId": "B",
+      "Iteration": 1,
+      "Status": "BLOCKED_CAPABILITY",
+      "WallMs": 2619.5977000000003,
+      "SetupMs": 1557.5086000000001,
+      "AuditValidationMs": 0,
+      "SettingsRestored": true,
+      "NaturallyInvalidReferencesAfterEdit": null,
+      "ControlledReferenceInvalidation": false,
+      "SemanticFaceRecovered": null
+    },
+    {
+      "CaseId": "C",
+      "Iteration": 1,
+      "Status": "PASSED",
+      "WallMs": 47644.6454,
+      "SetupMs": 1390.3974,
+      "AuditValidationMs": 22455.3531,
+      "SettingsRestored": true,
+      "NaturallyInvalidReferencesAfterEdit": null,
+      "ControlledReferenceInvalidation": false,
+      "SemanticFaceRecovered": null
+    },
+    {
+      "CaseId": "D",
+      "Iteration": 1,
+      "Status": "PASSED",
+      "WallMs": 63831.181500000006,
+      "SetupMs": 1460.7338,
+      "AuditValidationMs": 11179.970000000001,
+      "SettingsRestored": true,
+      "NaturallyInvalidReferencesAfterEdit": 0,
+      "ControlledReferenceInvalidation": true,
+      "SemanticFaceRecovered": true
+    },
+    {
+      "CaseId": "E",
+      "Iteration": 1,
+      "Status": "PASSED",
+      "WallMs": 2503.7327,
+      "SetupMs": 1548.4378000000002,
+      "AuditValidationMs": 0,
+      "SettingsRestored": true,
+      "NaturallyInvalidReferencesAfterEdit": null,
+      "ControlledReferenceInvalidation": false,
+      "SemanticFaceRecovered": null
+    }
+  ],
+  "BenchmarkUnitTests": {
+    "success": true,
+    "total": 23,
+    "failed": 0,
+    "results": [
+      {
+        "name": "fixed A..E manifest",
+        "success": true
+      },
+      {
+        "name": "unknown fields",
+        "success": true
+      },
+      {
+        "name": "duplicate keys",
+        "success": true
+      },
+      {
+        "name": "unknown version",
+        "success": true
+      },
+      {
+        "name": "unknown planner",
+        "success": true
+      },
+      {
+        "name": "fractional iterations",
+        "success": true
+      },
+      {
+        "name": "zero iterations",
+        "success": true
+      },
+      {
+        "name": "unbounded iterations",
+        "success": true
+      },
+      {
+        "name": "excess warmups",
+        "success": true
+      },
+      {
+        "name": "duplicate cases",
+        "success": true
+      },
+      {
+        "name": "unknown scenario",
+        "success": true
+      },
+      {
+        "name": "missing case",
+        "success": true
+      },
+      {
+        "name": "iteration/warmup bounds and explicit llm",
+        "success": true
+      },
+      {
+        "name": "valid single typed intent reaches callback once",
+        "success": true
+      },
+      {
+        "name": "unsupported RulePlanner input never reaches callback",
+        "success": true
+      },
+      {
+        "name": "legal canonical compressed from unsupported input is semantic failure",
+        "success": true
+      },
+      {
+        "name": "wrong parameter or value never reaches Runtime",
+        "success": true
+      },
+      {
+        "name": "runtime exception leaves telemetry and Console usable",
+        "success": true
+      },
+      {
+        "name": "telemetry is observational and counts thrown attempts",
+        "success": true
+      },
+      {
+        "name": "nested telemetry does not contaminate parent",
+        "success": true
+      },
+      {
+        "name": "blocked and failed cases cannot inflate suite success; warmups excluded",
+        "success": true
+      },
+      {
+        "name": "expected invalid edit remains unsuccessful edit but successful rollback",
+        "success": true
+      },
+      {
+        "name": "atomic result replacement is readable and cleans temporary file",
+        "success": true
+      }
+    ]
+  },
+  "ValidationRegression": {
+    "passed": 34,
+    "failed": 0,
+    "total": 34,
+    "source": "data-only mutation tests over previously recorded real native measurements; no live COM or LLM",
+    "results": [
+      {
+        "name": "valid previously measured canonical model",
+        "success": true
+      },
+      {
+        "name": "wrong feature type",
+        "success": true
+      },
+      {
+        "name": "changed feature identity",
+        "success": true
+      },
+      {
+        "name": "missing feature",
+        "success": true
+      },
+      {
+        "name": "sketch type mismatch",
+        "success": true
+      },
+      {
+        "name": "unbuilt document",
+        "success": true
+      },
+      {
+        "name": "feature rebuild error",
+        "success": true
+      },
+      {
+        "name": "extra solid body",
+        "success": true
+      },
+      {
+        "name": "extra surface body",
+        "success": true
+      },
+      {
+        "name": "missing box with no body",
+        "success": true
+      },
+      {
+        "name": "bounding box drift",
+        "success": true
+      },
+      {
+        "name": "requested dimension not applied",
+        "success": true
+      },
+      {
+        "name": "hole diameter differs despite dimension",
+        "success": true
+      },
+      {
+        "name": "hole count drift",
+        "success": true
+      },
+      {
+        "name": "asymmetric hole centers",
+        "success": true
+      },
+      {
+        "name": "blind hole geometry",
+        "success": true
+      },
+      {
+        "name": "blind end condition",
+        "success": true
+      },
+      {
+        "name": "pattern count drift",
+        "success": true
+      },
+      {
+        "name": "pattern spacing drift",
+        "success": true
+      },
+      {
+        "name": "fillet parameter differs",
+        "success": true
+      },
+      {
+        "name": "missing fillet geometry",
+        "success": true
+      },
+      {
+        "name": "stale reference",
+        "success": true
+      },
+      {
+        "name": "incomplete reference manifest",
+        "success": true
+      },
+      {
+        "name": "broken dependency graph",
+        "success": true
+      },
+      {
+        "name": "wrong dependency kind",
+        "success": true
+      },
+      {
+        "name": "binding ownership tampering",
+        "success": true
+      },
+      {
+        "name": "binding value drift",
+        "success": true
+      },
+      {
+        "name": "R2 succeeds with one set/rebuild/validation",
+        "success": true
+      },
+      {
+        "name": "R2 failure never loops",
+        "success": true
+      },
+      {
+        "name": "R2 rebuild failure stops before validation",
+        "success": true
+      },
+      {
+        "name": "R1 never guesses feature/sketchpoint identity",
+        "success": true
+      },
+      {
+        "name": "R1 unsupported reference remains stale class",
+        "success": true
+      },
+      {
+        "name": "R3 and R4 distinct failure classes",
+        "success": true
+      },
+      {
+        "name": "R5 unsupported/ambiguous classification",
+        "success": true
+      }
+    ]
+  },
+  "PlannerRegression": {
+    "testKind": "Deterministic rules, synthetic HTTP protocol fixtures, and actual loopback HTTP; no real model inference",
+    "executed": 76,
+    "failures": 0,
+    "results": [
+      {
+        "name": "rule edit mounting_holes.spacing",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 9.1577,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_holes.spacing",
+            "valueMm": 50
+          }
+        }
+      },
+      {
+        "name": "rule edit base_plate.thickness",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.1957,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "cef661fa62b09787cf9d56f563146291792174effa79f667abbf495c3971c0e5"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "base_plate.thickness",
+            "valueMm": 12
+          }
+        }
+      },
+      {
+        "name": "rule edit mounting_hole_seed.diameter",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.07540000000000001,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "53ab3d9b042ef7943499ce964a1da437d3847d5afdc4d4b8565ef5435d0f1346"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_hole_seed.diameter",
+            "valueMm": 10
+          }
+        }
+      },
+      {
+        "name": "rule edit outer_edge_fillet.radius",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0728,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "990b46d98fe11bc51ff57f927d23b014790447f49c7540ad0573715924f8d4c4"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "outer_edge_fillet.radius",
+            "valueMm": 4
+          }
+        }
+      },
+      {
+        "name": "rule canonical create canonical part",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0424,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "6259343890644cd07df3a0d1c83518fd5285c1e25e312313465907779678b219"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "create",
+            "units": "mm",
+            "createPreset": "canonical",
+            "parameter": null,
+            "valueMm": null
+          }
+        }
+      },
+      {
+        "name": "rule canonical 创建标准板件",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.034300000000000004,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "6259343890644cd07df3a0d1c83518fd5285c1e25e312313465907779678b219"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "create",
+            "units": "mm",
+            "createPreset": "canonical",
+            "parameter": null,
+            "valueMm": null
+          }
+        }
+      },
+      {
+        "name": "rule canonical 创建80×50×10 mm板，两个Ø8通孔，孔距40 mm，四条外侧竖直边R3圆角",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.022500000000000003,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "6259343890644cd07df3a0d1c83518fd5285c1e25e312313465907779678b219"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "create",
+            "units": "mm",
+            "createPreset": "canonical",
+            "parameter": null,
+            "valueMm": null
+          }
+        }
+      },
+      {
+        "name": "rule Chinese edit 0",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.053500000000000006,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_holes.spacing",
+            "valueMm": 50
+          }
+        }
+      },
+      {
+        "name": "rule Chinese edit 1",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0273,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "cef661fa62b09787cf9d56f563146291792174effa79f667abbf495c3971c0e5"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "base_plate.thickness",
+            "valueMm": 12
+          }
+        }
+      },
+      {
+        "name": "rule Chinese edit 2",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0244,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "53ab3d9b042ef7943499ce964a1da437d3847d5afdc4d4b8565ef5435d0f1346"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_hole_seed.diameter",
+            "valueMm": 10
+          }
+        }
+      },
+      {
+        "name": "rule Chinese edit 3",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0274,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "990b46d98fe11bc51ff57f927d23b014790447f49c7540ad0573715924f8d4c4"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "outer_edge_fillet.radius",
+            "valueMm": 4
+          }
+        }
+      },
+      {
+        "name": "rule reject create a turbine blade",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.18430000000000002,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule reject create canonical part then add a pocket",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0415,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule reject spacing 50 mm and thickness 12 mm",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0228,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule reject set thickness to 0.5 inch",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.017400000000000002,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule reject increase thickness by 2 mm",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0149,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule reject run FeatureCut4()",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0134,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule reject thickness R12",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0128,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule numeric reject thickness 0",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.26980000000000004,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "df300d4ff1412a4c2d05becb66b8a3db7aeeb92d22c4225f571be2952d7ac376"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule numeric reject hole diameter -2",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.1081,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "bc7a8681cb73f59abd962a8d79155159ddee438d8541d01be8b5591efd42dfa9"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule numeric reject spacing 1001",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0596,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "06a01177aa54e6db68b31aec891bfc88c9b187147779e933a2b9ebb1d4da84e1"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "rule numeric reject fillet 1e309",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.039400000000000004,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "empty command",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_INPUT_INVALID",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.022600000000000002,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "oversized input",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_INPUT_INVALID",
+          "metrics": {
+            "Provider": "rule",
+            "Model": null,
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.0233,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm accepts {\"intentVersion\":\"0.1\",\"mode\":\"create\",\"units\":\"mm\",\"createPreset\":\"canonical\",\"parameter\":null,\"valueMm\":null}",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 20.140800000000002,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "6259343890644cd07df3a0d1c83518fd5285c1e25e312313465907779678b219"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "create",
+            "units": "mm",
+            "createPreset": "canonical",
+            "parameter": null,
+            "valueMm": null
+          }
+        }
+      },
+      {
+        "name": "llm accepts {\"intentVersion\":\"0.1\",\"mode\":\"edit\",\"units\":\"mm\",\"createPreset\":null,\"parameter\":\"mounting_holes.spacing\",\"valueMm\":50}",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.4572,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_holes.spacing",
+            "valueMm": 50
+          }
+        }
+      },
+      {
+        "name": "llm accepts {\"intentVersion\":\"0.1\",\"mode\":\"edit\",\"units\":\"mm\",\"createPreset\":null,\"parameter\":\"base_plate.thickness\",\"valueMm\":12}",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.3042,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "cef661fa62b09787cf9d56f563146291792174effa79f667abbf495c3971c0e5"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "base_plate.thickness",
+            "valueMm": 12
+          }
+        }
+      },
+      {
+        "name": "llm accepts {\"intentVersion\":\"0.1\",\"mode\":\"edit\",\"units\":\"mm\",\"createPreset\":null,\"parameter\":\"mounting_hole_seed.diameter\",\"valueMm\":10}",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.53,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "53ab3d9b042ef7943499ce964a1da437d3847d5afdc4d4b8565ef5435d0f1346"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_hole_seed.diameter",
+            "valueMm": 10
+          }
+        }
+      },
+      {
+        "name": "llm accepts {\"intentVersion\":\"0.1\",\"mode\":\"edit\",\"units\":\"mm\",\"createPreset\":null,\"parameter\":\"outer_edge_fillet.radius\",\"valueMm\":4}",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2472,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "990b46d98fe11bc51ff57f927d23b014790447f49c7540ad0573715924f8d4c4"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "outer_edge_fillet.radius",
+            "valueMm": 4
+          }
+        }
+      },
+      {
+        "name": "llm rejects C# text",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.38730000000000003,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "86ce766cb14b2a2b8765706a761dca412d8c09cfe18eb2c8b08954d1ef58694e"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects Markdown fence",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2205,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "5c58595541f6ad63565bfc7f6323196f87a920d310e332b80c601df4c66b9c28"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects trailing text",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.1942,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "dd88fc91b9f4af267959e73eecbfc786227222c6fc8d10bc2f9b584413f0df92"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects duplicate key",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.27140000000000003,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "dbb0624bdb30cd33efd0b707207bcf456a6097bcd783c8d46b2671714bdd284e"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects trailing comma",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2286,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "a7cdb471280308edddc690bd2ed4f1867982bff2b43fefa1889d0ca054fbc070"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects comment",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.1938,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "25ad142eddbebf47621b7deb78a8053a775f330758011dad1ff7579b56fdcf6a"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects unknown field",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2106,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "48b55174f312c4e03aed79b276a6e966dbf24a1dc6060e53814571398b7dd1ac"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects tool sequence",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2732,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "356cb1741d1cff5b38bbd86254afd4a7988f4dcdbb37ec17021a7c32328643a6"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects array of intents",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.4248,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "7361822617d57323becf2abdb7da96ad77f2381ab531fec759aa8cbfe02926d5"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects missing field",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.4898,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "350fa0d185e514edf9f67219a01c1a6fbbe6cc0998757685c4f7a57d75c62eb9"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects version",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2859,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "72a1d5f7a032e77f502b6213dbed6273c119646453d8124cd9c2ffc832a4071f"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects inch units",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.27540000000000003,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "7f66a66b0c694ee1805c9f0ef91b5203711baf6db8b43b9f1c31a4dec4257252"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects unknown mode",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.27590000000000003,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": "984fd7b06b1519eda6605ae3a3f51634ca893f3d2791b807c1b07ab3631487f9"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects unknown parameter",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2736,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": "b7d76695a3378423df79a3da6f4c7d1a6ba8f462d34c84a6725f2f7608eebfca"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects feature display name",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2359,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": "f9458773e3862c72dcc7e04165d32b571fa685479ea3f8b5908d38af1e201f81"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects noncanonical preset",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.1935,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": "884d387547c5a05950335f1a4dfd64e03aadc9652ddf790dff2011be9a0b9200"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects create/edit mixed",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.19440000000000002,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "59e51fc4310009ba0fcfe9f16c5562f6657c14fbf8b41ecb23b8552e49f660de"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects create numeric extra",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2136,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "feeb95988077816d699255054efdd8aaee7bc5c7138926f3b627f0bb61451d7a"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects string numeric",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.18050000000000002,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "c119d96965c9c8625045ae30578b46a0618f90318a321a73874a9da25610a758"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects boolean numeric",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2018,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "49d70debe65b4fa66943988d543415ba4ff5a5e785e64b0ccf6e08f8a933e503"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects zero numeric",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.1961,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "0a87fec6294da07f0df89c8738cfb5361dea79512691cc3ad383a49353ec60ef"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects negative numeric",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.1976,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "d04ed0ef5c398870f13bf23cfd6c722cecc1b1433826bd04a57c0397902d004f"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects upper bound",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.19440000000000002,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "06a01177aa54e6db68b31aec891bfc88c9b187147779e933a2b9ebb1d4da84e1"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects null numeric",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_NUMERIC_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.192,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "152c0be72db3158825a033f2b4b4d09fa669155eed743b2c9a698295ed99ca0d"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects NaN",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2066,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "d4b7a2bfcee6712a57c7de63fb2d50ad2fe04925166ec43116624c9fc4b31b3b"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects overflow",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.4999,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "a6878f3565cd421bb8147ba9b831a6e3870b3c5d482ee8030a54fbe0e8d04a75"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects leading zero",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.25120000000000003,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "33a483b09ee4d2d55648a0d0b30651a9f320db279bb8feecec193561a12f185f"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects plus numeric",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2247,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "9ca79d35ec4441e22c7d77894a055c0927cc1c31f797919c24bea49fafd73e76"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects empty output",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_JSON_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2624,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "llm rejects oversized intent",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.38320000000000004,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "d90545d3ff229062d0072af9d87a9e2cf7e45cb19e2cf52fd771a0086f905f7b"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "usage absent stays null",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.23320000000000002,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_holes.spacing",
+            "valueMm": 50
+          }
+        }
+      },
+      {
+        "name": "invalid usage stays null",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.1991,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_holes.spacing",
+            "valueMm": 50
+          }
+        }
+      },
+      {
+        "name": "explicit json_object compatibility",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2495,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_holes.spacing",
+            "valueMm": 50
+          }
+        }
+      },
+      {
+        "name": "json_object still validates",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_SCHEMA_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2134,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "9a4b2afb26058df4defa9be0c424e055f117d2528825562313337f96239bc6d7"
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "provider tool call rejected",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_TOOLS_FORBIDDEN",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.395,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "provider refusal records unsupported",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_UNSUPPORTED_INTENT",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2394,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 1,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "truncated output rejected",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_OUTPUT_INCOMPLETE",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.3134,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "provider envelope malformed",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_RESPONSE_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.5161,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "HTTP failure no retry",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_HTTP_FAILED",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 0.2988,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "oversized protocol response",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_RESPONSE_TOO_LARGE",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 1.8381,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "malformed UTF8 counts parse failure",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_RESPONSE_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 4.3955,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 1,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "cancellation before request",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_CANCELLED",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.062,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "cancellation during request",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_CANCELLED",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 65.6555,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "timeout bounded no retry",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_TIMEOUT",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 1006.4461,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "invalid config makes zero calls",
+        "passed": true,
+        "detail": {
+          "success": false,
+          "errorCode": "PLANNER_CONFIG_INVALID",
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 0,
+            "LatencyMs": 0.1592,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": null
+          },
+          "intent": null
+        }
+      },
+      {
+        "name": "current state projection excludes names/references",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-test",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 4.3304,
+            "InputTokens": null,
+            "OutputTokens": null,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_holes.spacing",
+            "valueMm": 50
+          }
+        }
+      },
+      {
+        "name": "actual loopback HTTP transport and env configuration",
+        "passed": true,
+        "detail": {
+          "success": true,
+          "errorCode": null,
+          "metrics": {
+            "Provider": "llm",
+            "Model": "synthetic-local",
+            "PlannerCalls": 1,
+            "Calls": 1,
+            "LatencyMs": 39.999500000000005,
+            "InputTokens": 23,
+            "OutputTokens": 17,
+            "ParseFailures": 0,
+            "UnsupportedIntents": 0,
+            "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+          },
+          "intent": {
+            "intentVersion": "0.1",
+            "mode": "edit",
+            "units": "mm",
+            "createPreset": null,
+            "parameter": "mounting_holes.spacing",
+            "valueMm": 50
+          }
+        }
+      }
+    ]
+  },
+  "BatchRegression": {
+    "success": true,
+    "total": 17,
+    "failed": 0,
+    "results": [
+      {
+        "name": "normal restoration and one final refresh",
+        "success": true
+      },
+      {
+        "name": "exception body restores all settings",
+        "success": true
+      },
+      {
+        "name": "nested scopes preserve outer batch",
+        "success": true
+      },
+      {
+        "name": "already-disabled settings remain disabled",
+        "success": true
+      },
+      {
+        "name": "partial initialization read failure CommandInProgress",
+        "success": true
+      },
+      {
+        "name": "setter mutates then throws CommandInProgress",
+        "success": true
+      },
+      {
+        "name": "restore failure is visible and remaining restores run CommandInProgress",
+        "success": true
+      },
+      {
+        "name": "partial initialization read failure EnableFeatureTree",
+        "success": true
+      },
+      {
+        "name": "setter mutates then throws EnableFeatureTree",
+        "success": true
+      },
+      {
+        "name": "restore failure is visible and remaining restores run EnableFeatureTree",
+        "success": true
+      },
+      {
+        "name": "partial initialization read failure EnableFeatureTreeWindow",
+        "success": true
+      },
+      {
+        "name": "setter mutates then throws EnableFeatureTreeWindow",
+        "success": true
+      },
+      {
+        "name": "restore failure is visible and remaining restores run EnableFeatureTreeWindow",
+        "success": true
+      },
+      {
+        "name": "partial initialization read failure EnableGraphicsUpdate",
+        "success": true
+      },
+      {
+        "name": "setter mutates then throws EnableGraphicsUpdate",
+        "success": true
+      },
+      {
+        "name": "restore failure is visible and remaining restores run EnableGraphicsUpdate",
+        "success": true
+      },
+      {
+        "name": "final tree failure still attempts redraw",
+        "success": true
+      }
+    ]
+  },
+  "ChangedExistingSourceFiles": [
+    {
+      "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\CadValidator.cs",
+      "BeforeSha256": "6D126133140A70ACFBF86CA5721A8C17F03EAAB4B4A71D422049B41BBF615735",
+      "AfterSha256": "DA0C6C711D022B3DDAEB9BD342073FDC4E28DC0E95916A339103C4873E5D7A10"
+    },
+    {
+      "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\CanonicalCreationTransaction.cs",
+      "BeforeSha256": "A6DFEED4BCDFE8147EAC2AB7DE8E62BD481202D11C5B223FC6C859294B467F80",
+      "AfterSha256": "848FEDD1F686BB140C7E24F91797A472DBF6753EF70886C34E3667518B183C23"
+    },
+    {
+      "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\CanonicalExecutor.cs",
+      "BeforeSha256": "63B7960FBFD71FFA764A7A6972AE505FADCB91441836CCEDBDE9594851DDF6F4",
+      "AfterSha256": "981F9869E61DC84596AA7BFF9BD5FD1312A4D8DE643A15DBFC29BBAD3449CDE2"
+    },
+    {
+      "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\EditContext.cs",
+      "BeforeSha256": "B1A5EC3000A35E4BA2C9084672BC5D315659E8C3F3D3D1C6F09C239A02482147",
+      "AfterSha256": "FBF9E267588D694982F861E8784323A075F1C272F81570184DB1AF8D99A08203"
+    },
+    {
+      "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\Program.cs",
+      "BeforeSha256": "D7FA5C0BB1EBDBE485C6C7F9BFF1FA293FA4A0C96DD0460DB15DA6E6A89DB089",
+      "AfterSha256": "0F619A2A875EFB2D9188A85D43993EE4D2FA97E573601A7D0DF65C1F99F88CF4"
+    },
+    {
+      "Path": "D:\\CAD-Harness\\src\\CadHarness.Cli\\SolidWorksBatchScope.cs",
+      "BeforeSha256": "BCE3311CC172C26AFD00F2ADCB582655B1E96CE482F829A274A8F45DF55A68AC",
+      "AfterSha256": "26F295A1676948DEFFEE8733A847083A8A00C6D4C87C2BDC368FF5518BC33B59"
+    }
+  ],
+  "ProtectedModelsUnchanged": true,
+  "ProtectedCadStates": [
+    {
+      "Path": "artifacts/state/9af37689-f21c-4096-af17-63b878455f3d.json",
+      "BeforeSha256": "430F65489CA502DB8FA8FADE51B25768DE6597563CB665A48F0B9D808BBA3CE7",
+      "AfterSha256": "430F65489CA502DB8FA8FADE51B25768DE6597563CB665A48F0B9D808BBA3CE7",
+      "Unchanged": true
+    },
+    {
+      "Path": "artifacts/phase5/live-model-state.json",
+      "BeforeSha256": "635D63C20AF29AAA7FE4F539FEE656991536FDA27BE763D0D4B9615C00A4FDED",
+      "AfterSha256": "635D63C20AF29AAA7FE4F539FEE656991536FDA27BE763D0D4B9615C00A4FDED",
+      "Unchanged": true
+    },
+    {
+      "Path": "artifacts/phase6/live/model-state.json",
+      "BeforeSha256": "8982412D055B8FFD01455FAEBF2FBDEE0C2A5EFA066AE7501C7718697CBAE5EF",
+      "AfterSha256": "8982412D055B8FFD01455FAEBF2FBDEE0C2A5EFA066AE7501C7718697CBAE5EF",
+      "Unchanged": true
+    },
+    {
+      "Path": "artifacts/phase7/live/3-optimized-state.json",
+      "BeforeSha256": "6832E80FB5AF6C900207970ACC89EB560ED89A83B98306E48518454906757A09",
+      "AfterSha256": "6832E80FB5AF6C900207970ACC89EB560ED89A83B98306E48518454906757A09",
+      "Unchanged": true
+    }
+  ],
+  "OriginalDocumentRestored": true,
+  "RealLlmInferenceVerified": false,
+  "Planner": "rule",
+  "EvidencePaths": [
+    "artifacts/phase8/live/verification.json",
+    "artifacts/phase8/unit/results.json"
+  ],
+  "MeasurementNotes": [
+    "Instrumented API operation blocks exclude COM queries, selections, metadata and property access; each step declares coverage.",
+    "SOLIDWORKS execution time is synchronous observed direct API wall time including COM overhead, not an in-process native timestamp.",
+    "Case D natural reference survival and controlled stale-reference fallback are separate evidence.",
+    "Expected failed edits remain false RuntimeSuccess even when the negative case passes.",
+    "B blocked stays in the required-case denominator; no skipped case is counted as passed."
+  ]
+}

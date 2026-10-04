@@ -1,0 +1,30 @@
+{
+  "RunId": "2f94bb3f-be5a-4f7f-9616-8ffb9423e597",
+  "StartedUtc": "2026-10-03T16:00:13.6360837Z",
+  "CompletedUtc": "2026-10-03T16:00:15.9961302Z",
+  "Command": "同时把板厚改成15毫米，并把孔径改成12毫米",
+  "Operation": "plan",
+  "StatePath": "D:\\CAD-Harness\\artifacts\\phase5\\live-model-state.json",
+  "EvidencePath": "D:\\CAD-Harness\\artifacts\\planner\\2f94bb3f-be5a-4f7f-9616-8ffb9423e597.json",
+  "Planner": {
+    "Provider": "llm",
+    "Model": "deepseek-chat",
+    "PlannerCalls": 1,
+    "Calls": 1,
+    "LatencyMs": 2335.6974,
+    "InputTokens": 478,
+    "OutputTokens": 32,
+    "ParseFailures": 0,
+    "UnsupportedIntents": 1,
+    "OutputSha256": "bc09d5a790ace95f3b37f21c0ce4ac8e8f46bbfe65391dc4ddff0ffd2c519da4"
+  },
+  "ValidatedIntent": null,
+  "TypedIntent": null,
+  "Success": false,
+  "RuntimeEntered": false,
+  "RuntimeExitCode": null,
+  "RuntimeResult": null,
+  "ErrorCode": "PLANNER_UNSUPPORTED_INTENT",
+  "Error": "Unknown semantic parameter.",
+  "EvidenceWriteError": null
+}

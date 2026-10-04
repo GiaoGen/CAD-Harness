@@ -1,0 +1,51 @@
+{
+  "VerifiedUtc": "2026-10-03T15:51:21.7152290Z",
+  "Provider": "DeepSeek",
+  "BaseUrl": "https://api.deepseek.com/v1",
+  "Model": "deepseek-chat",
+  "OutputMode": "json_object with mandatory local schema/enum/numeric validation",
+  "RealApi": true,
+  "InputKind": "Synthetic fixed test command plus constrained intent schema; currentState=null",
+  "CadStateSent": false,
+  "Passed": true,
+  "ExitCode": 0,
+  "OriginalStateSha256Before": "430F65489CA502DB8FA8FADE51B25768DE6597563CB665A48F0B9D808BBA3CE7",
+  "OriginalStateSha256After": "430F65489CA502DB8FA8FADE51B25768DE6597563CB665A48F0B9D808BBA3CE7",
+  "PlannerEvidence": {
+    "RunId": "06c314c9-9b3d-4bea-b5fc-a651762e09ea",
+    "StartedUtc": "2026-10-03T15:51:20.0718536Z",
+    "CompletedUtc": "2026-10-03T15:51:21.690264Z",
+    "Command": "将孔距改为50毫米",
+    "Operation": "plan",
+    "StatePath": null,
+    "EvidencePath": "D:\\CAD-Harness\\artifacts\\planner\\06c314c9-9b3d-4bea-b5fc-a651762e09ea.json",
+    "Planner": {
+      "Provider": "llm",
+      "Model": "deepseek-chat",
+      "PlannerCalls": 1,
+      "Calls": 1,
+      "LatencyMs": 1614.6611,
+      "InputTokens": 430,
+      "OutputTokens": 37,
+      "ParseFailures": 0,
+      "UnsupportedIntents": 0,
+      "OutputSha256": "b57cf53498bff272dc8c6da92777806db58cd8227bd8cc1123bc80882f840156"
+    },
+    "ValidatedIntent": {
+      "intentVersion": "0.1",
+      "mode": "edit",
+      "units": "mm",
+      "createPreset": null,
+      "parameter": "mounting_holes.spacing",
+      "valueMm": 50
+    },
+    "TypedIntent": "ParameterEditIntent",
+    "Success": true,
+    "RuntimeEntered": false,
+    "RuntimeExitCode": null,
+    "RuntimeResult": null,
+    "ErrorCode": null,
+    "Error": null,
+    "EvidenceWriteError": null
+  }
+}
